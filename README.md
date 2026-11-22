@@ -4,7 +4,7 @@ An executive strategy and execution deck prepared by **Rahad Arefin** for the **
 
 ## Live Presentation
 
-`https://rahad-arefin.github.io/glossyglow-growth-plan/`
+[`Glossy Glow | Live Deck`](https://ggplan.vercel.app/)
 
 
 ## What Is Inside (19 Slides)
