@@ -1,14 +1,11 @@
 # Glossy Glow: 90-Day Growth & Revenue Acceleration Plan
 
-An interactive executive strategy and execution deck prepared by **Rahad Arefin** for the **Head of Growth & Marketing** interview at **Glossy Glow** (`www.glossyglow.com.bd`).
+An executive strategy and execution deck prepared by **Rahad Arefin** for the **Head of Growth & Marketing** interview at **Glossy Glow** (`www.glossyglow.com.bd`).
 
 ## Live Presentation
 
-Once GitHub Pages is enabled (`Settings > Pages > Branch: main / root`), this deck will be live at:
+`https://rahad-arefin.github.io/glossyglow-growth-plan/`
 
-`https://rahad-arefin.github.io/glossy-glow-growth-plan/`
-
-*(Update the repository name in the URL above if you choose a different repo name.)*
 
 ## What Is Inside (19 Slides)
 
