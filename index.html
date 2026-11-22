@@ -1,0 +1,2618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Glossy Glow | Growth Strategy &amp; 90-Day Execution Plan by Rahad Arefin</title>
+<meta name="description" content="Live Website Audit, Real Dhaka Competitor Playbook, Social Media Turnaround &amp; 90-Day Revenue Execution Plan for Glossy Glow, prepared by Rahad Arefin." />
+<meta name="theme-color" content="#D4086A" />
+<meta property="og:title" content="Glossy Glow | Growth Strategy &amp; 90-Day Execution Plan" />
+<meta property="og:description" content="Executive Digital Audit, Competitor Intelligence &amp; 90-Day Revenue Roadmap prepared by Rahad Arefin (www.rahadarefin.com)." />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23D4086A'/%3E%3Ctext x='32' y='41' text-anchor='middle' fill='%23fff' font-family='Georgia,serif' font-size='26' font-weight='700'%3EGG%3C/text%3E%3C/svg%3E" />
+<style>
+  :root {
+    --paper: #FFFFFF;
+    --blush: #FDF2F7;
+    --blush2: #F7D7E7;
+    --line: #EED5E2;
+    --canvas: #EBE2E7;
+    --ink: #220E1A;
+    --soft: #6C5764;
+    --mag: #D4086A;
+    --mag2: #EE1C84;
+    --deep: #8A0445;
+    --gold: #B08543;
+    --bad: #C42334;
+    --warn: #C97A0C;
+    --good: #167F52;
+    --serif: Didot, "Bodoni MT", "Playfair Display", Georgia, "Times New Roman", serif;
+    --sans: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: var(--canvas); scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.56;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.012em;
+    color: var(--ink);
+  }
+
+  h2 { font-size: clamp(1.85rem, 3.05vw, 2.75rem); }
+  h3 { font-size: 1.32rem; }
+  button { font: inherit; color: inherit; }
+  a { color: var(--mag); }
+  :focus-visible { outline: 2.5px solid var(--mag); outline-offset: 2px; }
+
+  /* ==================== MOTION SYSTEM (PURPOSEFUL & EXECUTIVE) ==================== */
+  .anim-up {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+  }
+  .page.in-view .anim-up {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .page.in-view .d1 { transition-delay: 0.08s; }
+  .page.in-view .d2 { transition-delay: 0.16s; }
+  .page.in-view .d3 { transition-delay: 0.24s; }
+  .page.in-view .d4 { transition-delay: 0.32s; }
+
+  /* Animated Horizontal Bars */
+  .bar-anim {
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform 0.9s var(--ease);
+  }
+  .page.in-view .bar-anim {
+    transform: scaleX(1);
+  }
+
+  /* Animated SVG Ring Draw */
+  .ring-arc {
+    transition: stroke-dashoffset 1.1s var(--ease);
+  }
+
+  /* Animated Flowing Dashed Path */
+  @keyframes flowDash {
+    to { stroke-dashoffset: -44; }
+  }
+  .flow-line {
+    stroke-dasharray: 7 5;
+    animation: flowDash 2.6s linear infinite;
+  }
+
+  /* Hand-Drawn Red Proof Circle Animation */
+  .hl-wrap {
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    color: var(--bad);
+    padding: 1px 5px;
+  }
+  .hl-svg {
+    position: absolute;
+    inset: -7px -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 14px);
+    pointer-events: none;
+    overflow: visible;
+  }
+  .hl-path {
+    fill: none;
+    stroke: var(--bad);
+    stroke-width: 2.3;
+    stroke-linecap: round;
+    stroke-dasharray: 420;
+    stroke-dashoffset: 420;
+    transition: stroke-dashoffset 0.95s var(--ease) 0.35s;
+  }
+  .page.in-view .hl-path {
+    stroke-dashoffset: 0;
+  }
+
+  /* Mobile Sticky Top Bar (Hidden on Desktop) */
+  .mobile-top {
+    display: none;
+    position: sticky;
+    top: 0;
+    z-index: 250;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding: 10px 16px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .mobile-brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--ink);
+  }
+  .mobile-brand img { width: 24px; height: 24px; border-radius: 6px; object-fit: cover; }
+  .mobile-actions { display: flex; gap: 8px; align-items: center; }
+  .mob-btn {
+    background: var(--blush);
+    border: 1px solid var(--line);
+    color: var(--deep);
+    padding: 7px 13px;
+    border-radius: 99px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .mob-btn.solid { background: var(--mag); border-color: var(--mag); color: #fff; }
+
+  /* Stage */
+  .deck-stage {
+    min-height: 100vh;
+    padding: 20px 20px 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+  body.scroll-mode .deck-stage {
+    justify-content: flex-start;
+    padding: 28px 20px 96px;
+  }
+
+  /* Generous 16:9 Editorial Page (35-45% Open Whitespace Target) */
+  .page {
+    position: relative;
+    width: min(1260px, 100%);
+    min-height: 708px;
+    background: var(--paper);
+    padding: 64px 74px 66px;
+    border-radius: 8px;
+    box-shadow: 0 24px 68px rgba(56, 8, 32, 0.12), 0 2px 8px rgba(56, 8, 32, 0.05);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .page.active { display: flex; }
+  body.scroll-mode .page { display: flex; }
+  .page.blush { background: var(--blush); }
+
+  /* Subtle Botanical Editorial Watermark */
+  .wm-art {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 280px;
+    opacity: 0.06;
+    pointer-events: none;
+  }
+
+  /* Running Header & Footer */
+  .runhead {
+    position: absolute;
+    top: 24px;
+    left: 74px;
+    right: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.74rem;
+    color: var(--soft);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .runhead-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .runhead-brand img { width: 17px; height: 17px; border-radius: 4px; object-fit: cover; }
+  .pnum { position: absolute; bottom: 22px; right: 74px; font-family: var(--serif); font-size: 0.98rem; color: var(--soft); }
+  .pfoot { position: absolute; bottom: 23px; left: 74px; font-size: 0.74rem; color: var(--soft); }
+
+  .chap {
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--mag);
+    font-size: 1.08rem;
+    margin-bottom: 8px;
+  }
+  .lead {
+    font-size: 1.04rem;
+    color: var(--soft);
+    max-width: 62ch;
+    margin-top: 10px;
+  }
+
+  .center-grow {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 22px;
+  }
+
+  /* ==================== COVER & CLOSING (RADIANT MAGENTA) ==================== */
+  .cover, .closing-page {
+    background: radial-gradient(125% 95% at 50% 42%, #F82B8E 0%, #D4086A 56%, #9E024A 100%);
+    color: #FFFFFF;
+    padding: 64px 76px 116px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cover h1, .closing-page h2 { color: #FFFFFF; }
+
+  .sheen {
+    position: absolute;
+    inset: -45%;
+    background: linear-gradient(115deg, transparent 42%, rgba(255, 255, 255, 0.2) 50%, transparent 58%);
+    animation: sheenMove 3.2s 0.35s ease-out both;
+    pointer-events: none;
+  }
+  @keyframes sheenMove {
+    from { transform: translateX(-45%); }
+    to { transform: translateX(45%); }
+  }
+  .cover-frame {
+    position: absolute;
+    inset: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 4px;
+    pointer-events: none;
+  }
+  .cover-art-left, .cover-art-right {
+    position: absolute;
+    opacity: 0.14;
+    pointer-events: none;
+  }
+  .cover-art-left { left: 34px; top: 50%; transform: translateY(-50%); width: 175px; }
+  .cover-art-right { right: 34px; top: 50%; transform: translateY(-50%); width: 175px; }
+
+  .cover .mark {
+    width: min(215px, 42%);
+    height: auto;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 14px 30px rgba(74, 0, 34, 0.38));
+  }
+  .cover-kicker {
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    opacity: 0.9;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  .cover h1 {
+    font-size: clamp(2.35rem, 4.7vw, 4.25rem);
+    max-width: 16ch;
+    margin: 0 auto;
+    line-height: 1.06;
+  }
+  .cover .sub {
+    margin-top: 20px;
+    font-size: 1.06rem;
+    opacity: 0.92;
+    max-width: 52ch;
+    font-weight: 300;
+  }
+  .cover .meta {
+    position: absolute;
+    bottom: 44px;
+    left: 76px;
+    right: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.86rem;
+    opacity: 0.94;
+    text-align: left;
+    gap: 20px;
+  }
+  .cover .meta b { display: block; font-weight: 600; font-size: 0.98rem; margin-top: 2px; }
+  .cover .meta a { color: #FFE1EE; text-decoration: underline; font-weight: 600; }
+
+  /* ==================== CONTENTS (SLIDE 02) ==================== */
+  .toc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px 36px;
+    margin-top: 38px;
+  }
+  .toc-item {
+    text-align: left;
+    background: none;
+    border: none;
+    border-top: 1.5px solid var(--line);
+    padding-top: 18px;
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .toc-item:hover { border-top-color: var(--mag); transform: translateY(-2px); }
+  .toc-item:hover .n { color: var(--mag); }
+  .toc-item .n { font-family: var(--serif); font-size: 2.55rem; color: var(--blush2); line-height: 1; transition: color 0.2s; }
+  .toc-item b { display: block; font-size: 1.02rem; font-weight: 600; margin-top: 10px; color: var(--ink); }
+  .toc-item span { display: block; font-size: 0.86rem; color: var(--soft); margin-top: 6px; line-height: 1.42; }
+
+  /* ==================== SPLIT LAYOUT & SUMMARY (SLIDE 03) ==================== */
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1.06fr;
+    gap: 52px;
+    align-items: center;
+    flex: 1;
+    margin-top: 18px;
+  }
+  .quote {
+    font-family: var(--serif);
+    font-size: 1.42rem;
+    line-height: 1.34;
+    color: var(--ink);
+    border-left: 3px solid var(--mag);
+    padding-left: 20px;
+    margin-bottom: 28px;
+  }
+  .bigstats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 22px;
+  }
+  .bigstats div {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+  .bigstats b { display: block; font-family: var(--serif); font-size: 2.15rem; line-height: 1.05; color: var(--mag); }
+  .bigstats span { display: block; font-size: 0.84rem; color: var(--soft); margin-top: 5px; }
+
+  .card-panel {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 26px 28px;
+    box-shadow: 0 10px 28px rgba(56, 8, 32, 0.05);
+  }
+  .kicker-sm {
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--soft);
+    margin-bottom: 14px;
+  }
+
+  /* ==================== STORES & CORRIDOR (SLIDE 04) ==================== */
+  .corridor-desktop {
+    margin-top: 20px;
+    background: var(--blush);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px 28px;
+  }
+  .corridor-mobile {
+    display: none;
+    margin-top: 14px;
+    background: var(--blush);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--deep);
+    text-align: center;
+  }
+  .stores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .store {
+    background: var(--blush);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 22px 24px;
+  }
+  .store small { color: var(--mag); font-weight: 700; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .store b { display: block; font-family: var(--serif); font-size: 1.32rem; margin: 6px 0 8px; color: var(--ink); }
+  .store p { font-size: 0.88rem; color: var(--soft); line-height: 1.48; }
+
+  .qr-bar {
+    margin-top: 20px;
+    background: var(--ink);
+    color: #fff;
+    border-radius: 14px;
+    padding: 18px 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    font-size: 0.84rem;
+    line-height: 1.4;
+  }
+  .qr-bar strong { display: block; color: #FF79B8; margin-bottom: 3px; }
+  .qr-bar .qr-last strong { color: #4ADE80; }
+
+  /* ==================== COMPETITORS (SLIDES 05 & 06 DE-CROWDED!) ==================== */
+  .alert-banner {
+    background: var(--paper);
+    border: 1.5px solid var(--mag);
+    border-radius: 14px;
+    padding: 18px 22px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 18px;
+  }
+  .alert-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--mag); margin-top: 7px; flex-shrink: 0; }
+
+  .insight-stack { display: grid; gap: 14px; }
+  .insight-item {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+  .insight-item b { display: block; font-family: var(--serif); font-size: 1.18rem; color: var(--ink); margin-bottom: 5px; }
+  .insight-item p { font-size: 0.88rem; color: var(--soft); line-height: 1.48; }
+
+  .table-wrap {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    box-shadow: 0 10px 28px rgba(56, 8, 32, 0.05);
+    margin-top: 22px;
+  }
+  .comp-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  .comp-table th {
+    background: var(--ink);
+    color: #fff;
+    text-align: left;
+    padding: 14px 18px;
+    font-weight: 600;
+    font-size: 0.76rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .comp-table td {
+    padding: 15px 18px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+    line-height: 1.46;
+  }
+  .comp-table tr:last-child td { border-bottom: none; }
+  .comp-table tr.hot td { background: #FFF5FA; }
+  .pill-mini {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 99px;
+    background: var(--blush2);
+    color: var(--deep);
+    margin-top: 5px;
+  }
+
+  /* ==================== SPEED & LIVE IPHONE WAIT SIMULATOR (SLIDE 07) ==================== */
+  .speed-grid {
+    display: grid;
+    grid-template-columns: 0.92fr 1.15fr;
+    gap: 44px;
+    align-items: center;
+    flex: 1;
+    margin-top: 16px;
+  }
+  .phones-compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .phone-frame {
+    background: #1B1117;
+    border-radius: 26px;
+    padding: 10px;
+    box-shadow: 0 16px 36px rgba(34, 14, 26, 0.16);
+  }
+  .phone-screen {
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 14px 12px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .phone-notch {
+    width: 56px;
+    height: 10px;
+    background: #1B1117;
+    border-radius: 99px;
+    margin: 0 auto 10px;
+  }
+  .skel {
+    background: linear-gradient(90deg, #F3E9EE 25%, #FAF4F7 50%, #F3E9EE 75%);
+    background-size: 200% 100%;
+    animation: skelPulse 1.4s infinite linear;
+    border-radius: 6px;
+  }
+  @keyframes skelPulse {
+    from { background-position: 200% 0; }
+    to { background-position: -200% 0; }
+  }
+  .spinner {
+    width: 28px;
+    height: 28px;
+    border: 3px solid var(--blush2);
+    border-top-color: var(--bad);
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+    margin: 0 auto 8px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .rings-mini {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .ringc {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 10px 6px;
+    text-align: center;
+  }
+  .ringc b { display: block; font-size: 0.72rem; margin-top: 3px; }
+
+  .wf-list { display: grid; gap: 12px; }
+  .wf-row { font-size: 0.88rem; }
+  .wf-top { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 5px; font-weight: 600; }
+  .wf-tr { height: 22px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+  .wf-fl { height: 100%; border-radius: 5px; display: flex; align-items: center; padding-left: 10px; color: #fff; font-size: 0.76rem; font-weight: 700; white-space: nowrap; }
+
+  .dev-btn {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 99px;
+    padding: 7px 16px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--soft);
+    cursor: pointer;
+    margin-top: 14px;
+  }
+  .dev-btn:hover { border-color: var(--mag); color: var(--mag); }
+  .dev-box {
+    display: none;
+    margin-top: 10px;
+    background: #FAF8FA;
+    border: 1px dashed var(--line);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--soft);
+    line-height: 1.5;
+  }
+  .dev-box.open { display: block; }
+
+  /* ==================== LIVE PROOF CARDS (SLIDE 08) ==================== */
+  .proofgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 24px;
+  }
+  .shot {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(56, 8, 32, 0.06);
+    display: flex;
+    flex-direction: column;
+  }
+  .shot .bar {
+    height: 30px;
+    background: #230F1B;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 14px;
+    font-size: 0.7rem;
+  }
+  .shot .bar i { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.35); display: block; }
+  .shot .bar i:first-child { background: #F87171; }
+  .shot .bar i:nth-child(2) { background: #FBBF24; }
+  .shot .bar i:nth-child(3) { background: #4ADE80; }
+  .shot .bar span { margin-left: 6px; opacity: 0.85; }
+  .shot .body { padding: 20px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+  .shot .why { margin-top: 16px; padding-top: 12px; border-top: 1px dashed var(--line); font-size: 0.84rem; color: var(--soft); }
+
+  .cat-strip {
+    margin-top: 20px;
+    background: var(--blush);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.86rem;
+  }
+  .cat-tags { display: flex; gap: 7px; flex-wrap: wrap; margin-top: 6px; }
+  .ctag { padding: 4px 10px; border-radius: 99px; font-size: 0.74rem; font-weight: 600; background: var(--paper); border: 1px solid var(--line); color: var(--ink); }
+  .ctag.odd { background: #FEE2E2; border-color: #FECACA; color: var(--bad); text-decoration: line-through; }
+  .spf-alert { border-left: 2px solid var(--bad); padding-left: 16px; max-width: 360px; flex-shrink: 0; }
+
+  /* ==================== GOOGLE SERP (SLIDE 09) ==================== */
+  .serps { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 22px; }
+  .serp {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 22px 24px;
+    box-shadow: 0 8px 24px rgba(56, 8, 32, 0.05);
+  }
+  .serp-badge { display: inline-block; font-size: 0.74rem; font-weight: 700; padding: 4px 12px; border-radius: 99px; margin-bottom: 14px; }
+  .serp-item { padding: 12px 14px; border-radius: 10px; background: #FAF9FA; border: 1px solid #ECE7EA; margin-bottom: 12px; font-family: Arial, sans-serif; }
+  .serp-item:last-child { margin-bottom: 0; }
+  .serp-u { font-size: 0.76rem; color: #4d5156; word-break: break-word; }
+  .serp-t { font-size: 1rem; color: #1a0dab; font-weight: 600; margin: 3px 0 4px; }
+  .serp-d { font-size: 0.82rem; color: #4d5156; line-height: 1.44; }
+  .serp-rich { display: flex; gap: 14px; flex-wrap: wrap; font-size: 0.78rem; margin-top: 8px; color: #3c4043; font-weight: 600; }
+
+  .gaps-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 20px; }
+  .gap-box { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; font-size: 0.86rem; }
+  .gap-box b { display: block; color: var(--ink); margin-bottom: 4px; }
+  .gap-box span { color: var(--soft); }
+
+  /* ==================== SOCIAL AUDIT (SLIDE 10) ==================== */
+  .chans { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 18px; }
+  .chan { background: var(--blush); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; }
+  .chan .h { display: flex; justify-content: space-between; align-items: center; font-size: 0.86rem; font-weight: 600; gap: 6px; }
+  .chan .m { font-family: var(--serif); font-size: 2.1rem; line-height: 1.1; margin-top: 8px; color: var(--ink); }
+  .chan .l { font-size: 0.8rem; color: var(--soft); margin-top: 4px; line-height: 1.38; }
+  .v { font-size: 0.7rem; font-weight: 700; padding: 2px 9px; border-radius: 99px; white-space: nowrap; }
+  .v.bad { background: #FEE2E2; color: var(--bad); }
+  .v.warn { background: #FEF3C7; color: var(--warn); }
+
+  .socrow { display: grid; grid-template-columns: 1.12fr 1fr; gap: 28px; margin-top: 22px; flex: 1; align-items: center; }
+  .hbars { display: grid; gap: 12px; }
+  .hb { font-size: 0.84rem; }
+  .hb-top { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 4px; }
+  .hb-val { font-weight: 700; white-space: nowrap; }
+  .hb .tr { height: 18px; background: var(--blush); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+  .hb .fl { height: 100%; border-radius: 5px; }
+
+  .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .dos > div { border-radius: 16px; padding: 18px 20px; font-size: 0.86rem; border: 1px solid var(--line); }
+  .dos .stop { background: #FFF5F6; }
+  .dos .start { background: #F2FBF6; }
+  .dos b { display: block; margin-bottom: 8px; font-size: 0.92rem; }
+  .dos ul { padding-left: 17px; color: var(--soft); }
+  .dos li { margin-bottom: 6px; }
+
+  /* ==================== GROWTH LOOP (SLIDE 11) & 6 ENGINES (SLIDE 12) DE-CROWDED! ==================== */
+  .loop-pillars { display: grid; gap: 16px; }
+  .lp-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 3.5px solid var(--mag);
+    border-radius: 14px;
+    padding: 18px 22px;
+  }
+  .lp-card b { display: block; font-family: var(--serif); font-size: 1.2rem; margin-bottom: 4px; }
+  .lp-card p { font-size: 0.88rem; color: var(--soft); }
+
+  .engines-3x2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 28px;
+    margin-top: 28px;
+    flex: 1;
+    align-content: center;
+  }
+  .eng-big {
+    border-top: 1.5px solid var(--line);
+    padding-top: 20px;
+    transition: border-color 0.2s;
+  }
+  .eng-big:hover { border-top-color: var(--mag); }
+  .eng-ico { width: 38px; height: 38px; stroke: var(--mag); fill: none; stroke-width: 1.6; margin-bottom: 12px; }
+  .eng-big b { display: block; font-family: var(--serif); font-size: 1.32rem; margin-bottom: 8px; color: var(--ink); }
+  .eng-big p { font-size: 0.9rem; color: var(--soft); line-height: 1.5; margin-bottom: 10px; }
+  .eng-big .tg { font-size: 0.82rem; font-weight: 700; color: var(--mag); }
+
+  /* ==================== NEW CHANNELS MATRIX (SLIDE 13) ==================== */
+  .matrixwrap { display: grid; grid-template-columns: 1.18fr 1fr; gap: 36px; flex: 1; margin-top: 22px; align-items: center; }
+  .matrix-box { padding-left: 22px; padding-bottom: 26px; }
+  .matrix {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    border-left: 1.5px solid var(--ink);
+    border-bottom: 1.5px solid var(--ink);
+    background: linear-gradient(var(--paper), var(--paper)) top left/50% 50% no-repeat, var(--blush2);
+    background-size: 50% 50%, 100% 100%;
+    border-radius: 0 12px 0 0;
+  }
+  .matrix .q { position: absolute; font-family: var(--serif); font-style: italic; font-size: 0.8rem; color: var(--soft); }
+  .bub {
+    position: absolute;
+    transform: translate(-50%, 50%);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: var(--mag);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 6px;
+    line-height: 1.15;
+    cursor: pointer;
+    box-shadow: 0 10px 24px rgba(212, 8, 106, 0.3);
+    transition: transform 0.2s var(--ease), background 0.2s;
+  }
+  .bub:hover, .bub[aria-pressed="true"] { transform: translate(-50%, 50%) scale(1.12); background: var(--deep); z-index: 4; }
+  .chan-pills { display: none; gap: 8px; flex-wrap: wrap; margin-top: 14px; margin-bottom: 14px; }
+  .cpill { background: var(--paper); border: 1.5px solid var(--line); color: var(--ink); padding: 8px 14px; border-radius: 99px; font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+  .cpill.active { background: var(--mag); border-color: var(--mag); color: #fff; }
+  .detail-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 28px;
+    min-height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 28px rgba(56, 8, 32, 0.05);
+  }
+  .detail-card .dtag { font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--mag); }
+  .detail-card h3 { font-size: 1.52rem; margin: 8px 0 12px; }
+  .detail-card p { font-size: 0.94rem; color: var(--soft); line-height: 1.55; }
+  .detail-card .fs { background: var(--blush); border-radius: 12px; padding: 14px 16px; font-size: 0.88rem; margin-top: 16px; color: var(--ink); }
+
+  /* ==================== INTERACTIVE GANTT (SLIDE 14) ==================== */
+  .swipe-hint { display: none; font-size: 0.78rem; color: var(--mag); font-weight: 600; margin-top: 12px; }
+  .gantt {
+    margin-top: 22px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 0.8rem;
+    background: var(--paper);
+    box-shadow: 0 8px 24px rgba(56, 8, 32, 0.05);
+  }
+  .gantt-inner { min-width: 800px; }
+  .months { display: grid; grid-template-columns: 165px 4fr 4fr 4fr; background: var(--mag); color: #fff; font-size: 0.78rem; font-weight: 600; }
+  .months div { padding: 9px 12px; }
+  .months div + div { border-left: 1px solid rgba(255,255,255,0.3); text-align: center; }
+  .grow-row { display: grid; grid-template-columns: 165px repeat(12, 1fr); border-top: 1px solid var(--line); min-height: 50px; align-items: center; }
+  .grow-row.hdr { background: var(--ink); color: #fff; min-height: 32px; }
+  .grow-row.hdr div { text-align: center; font-size: 0.72rem; opacity: 0.85; }
+  .grow-row .lane { padding: 0 14px; font-weight: 600; font-size: 0.82rem; height: 100%; display: flex; align-items: center; background: var(--blush); border-right: 1px solid var(--line); }
+  .grow-row.hdr .lane { background: var(--ink); border-right-color: rgba(255,255,255,0.15); }
+  .gbar {
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.74rem;
+    font-weight: 600;
+    padding: 0 10px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 4px;
+    transition: opacity 0.15s, transform 0.15s;
+  }
+  .gbar:hover { opacity: 0.92; transform: translateY(-1px); }
+  .gbar.p1 { background: var(--mag); }
+  .gbar.p2 { background: var(--deep); }
+  .gbar.p3 { background: var(--gold); }
+  .gbar[aria-pressed="true"] { outline: 2.5px solid var(--ink); outline-offset: 2px; }
+  .gdetail {
+    margin-top: 20px;
+    background: var(--blush);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    font-size: 0.9rem;
+  }
+  .gdetail-kpi { text-align: right; min-width: 220px; flex-shrink: 0; }
+
+  /* ==================== 3 PHASES (SLIDE 15) ==================== */
+  .phases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 24px; flex: 1; }
+  .phase { border-radius: 20px; padding: 28px 26px; color: #fff; display: flex; flex-direction: column; }
+  .phase small { font-size: 0.76rem; letter-spacing: 0.09em; text-transform: uppercase; opacity: 0.88; font-weight: 600; }
+  .phase h3 { color: #fff; font-size: 1.65rem; margin: 8px 0 16px; }
+  .phase ul { padding-left: 18px; font-size: 0.9rem; line-height: 1.55; }
+  .phase li { margin-bottom: 9px; }
+  .phase .goal { margin-top: auto; border-top: 1px solid rgba(255,255,255,0.34); padding-top: 14px; font-size: 0.88rem; font-weight: 600; }
+
+  /* ==================== DEDICATED BDT SIMULATOR (SLIDE 16 DE-CROWDED!) ==================== */
+  .sim-kpi-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 18px; }
+  .skpi { background: var(--blush); border: 1px solid var(--line); border-radius: 14px; padding: 13px 16px; }
+  .skpi span { font-size: 0.74rem; color: var(--soft); display: block; }
+  .skpi b { font-family: var(--serif); font-size: 1.32rem; font-weight: 400; color: var(--ink); display: block; margin-top: 2px; }
+
+  .calcrow { display: grid; grid-template-columns: 1fr 1.12fr; gap: 36px; margin-top: 24px; flex: 1; align-items: center; }
+  .preset-row { display: flex; gap: 10px; margin-bottom: 18px; }
+  .pbtn { flex: 1; border: 1px solid var(--line); background: var(--paper); border-radius: 99px; padding: 9px 12px; font-size: 0.82rem; font-weight: 600; color: var(--soft); cursor: pointer; transition: all 0.15s; }
+  .pbtn.active { background: var(--mag); color: #fff; border-color: var(--mag); }
+  .fld { margin-bottom: 16px; }
+  .fld label { display: flex; justify-content: space-between; font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; gap: 8px; }
+  .fld output { color: var(--mag); font-family: var(--mono); white-space: nowrap; }
+  input[type=range] { width: 100%; accent-color: var(--mag); cursor: pointer; height: 8px; }
+  .calcout { background: var(--ink); color: #fff; border-radius: 20px; padding: 28px 30px; box-shadow: 0 18px 40px rgba(34, 14, 26, 0.2); }
+  .calcout .big { font-family: var(--serif); font-size: clamp(2.1rem, 3.3vw, 2.75rem); line-height: 1.05; color: #FF62AC; margin: 6px 0 4px; }
+  .stack-bar { display: flex; height: 14px; border-radius: 99px; overflow: hidden; margin: 14px 0; background: rgba(255,255,255,0.12); }
+  .calcout .row { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid rgba(255,255,255,0.12); padding: 8px 0; font-size: 0.88rem; }
+  .calcout .row:last-of-type { border-bottom: none; }
+  .calcout .row strong { white-space: nowrap; }
+
+  /* ==================== BUDGET & TEAM (SLIDE 17) ==================== */
+  .three { display: grid; grid-template-columns: 1.08fr 1fr 1fr; gap: 24px; margin-top: 24px; flex: 1; align-items: stretch; }
+  .listc { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 24px; display: flex; flex-direction: column; }
+  .listc h3 { font-size: 1.25rem; margin-bottom: 14px; color: var(--ink); }
+  .listc ul { padding-left: 18px; font-size: 0.9rem; color: var(--soft); line-height: 1.55; }
+  .listc li { margin-bottom: 10px; }
+  .listc li strong { color: var(--ink); }
+
+  /* ==================== DEDICATED ABOUT RAHAD (SLIDE 18 DE-CROWDED!) ==================== */
+  .about-grid { display: grid; grid-template-columns: 0.9fr 1.25fr; gap: 44px; align-items: center; margin-top: 24px; flex: 1; }
+  .rahad-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 22px 0; }
+  .rstat { background: var(--blush); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  .rstat strong { font-family: var(--serif); font-size: 1.9rem; color: var(--mag); display: block; line-height: 1.05; }
+  .rstat span { font-size: 0.82rem; color: var(--soft); display: block; margin-top: 4px; }
+  .cases { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .case { background: var(--blush); border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; }
+  .case b { font-family: var(--serif); font-size: 1.85rem; color: var(--mag); display: block; line-height: 1.08; }
+  .case span { font-size: 0.84rem; font-weight: 700; color: var(--ink); display: block; margin-top: 4px; }
+  .case p { font-size: 0.84rem; color: var(--soft); margin-top: 8px; line-height: 1.46; }
+  .port-btn {
+    display: inline-block;
+    background: var(--mag);
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 26px;
+    border-radius: 99px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 10px 24px rgba(212, 8, 106, 0.28);
+    transition: transform 0.15s, background 0.15s;
+  }
+  .port-btn:hover { background: var(--deep); transform: translateY(-2px); }
+
+  /* ==================== PURE CLOSING SLIDE (SLIDE 19) ==================== */
+  .closing-page h2 { font-size: clamp(2.4rem, 4.8vw, 4.1rem); max-width: 17ch; margin: 0 auto; line-height: 1.08; }
+  .closing-page .csub { font-size: 1.12rem; opacity: 0.92; max-width: 50ch; margin: 22px auto 0; font-weight: 300; }
+  .closing-cta {
+    display: inline-block;
+    margin-top: 34px;
+    background: #fff;
+    color: var(--deep);
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 99px;
+    font-weight: 700;
+    font-size: 0.96rem;
+    box-shadow: 0 12px 30px rgba(60, 0, 28, 0.3);
+    transition: transform 0.15s;
+  }
+  .closing-cta:hover { transform: translateY(-2px); }
+
+  /* ==================== DESKTOP DECK BAR ==================== */
+  .deck-bar {
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 300;
+    background: rgba(34, 14, 26, 0.94);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 999px;
+    padding: 6px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 12px 32px rgba(34, 14, 26, 0.28);
+    backdrop-filter: blur(10px);
+    font-size: 0.78rem;
+  }
+  .deck-bar button {
+    background: rgba(255, 255, 255, 0.12);
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .deck-bar button:hover { background: var(--mag); }
+  .deck-bar button.primary { background: var(--mag); }
+  .deck-counter { font-family: var(--mono); font-weight: 700; color: #FF8BC2; min-width: 58px; text-align: center; }
+
+  /* Overview Modal */
+  .ov-modal { display: none; position: fixed; inset: 0; z-index: 400; background: rgba(34, 14, 26, 0.92); backdrop-filter: blur(8px); padding: 28px 20px; overflow-y: auto; }
+  .ov-modal.open { display: block; }
+  .ov-grid { max-width: 1120px; margin: 20px auto 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(225px, 1fr)); gap: 12px; }
+  .ov-card { background: #fff; border-radius: 10px; padding: 13px 15px; cursor: pointer; border: 2px solid transparent; transition: all 0.15s; }
+  .ov-card:hover, .ov-card.current { border-color: var(--mag); transform: translateY(-2px); }
+  .ov-card small { font-family: var(--mono); color: var(--mag); font-weight: 700; font-size: 0.72rem; }
+  .ov-card b { display: block; font-size: 0.86rem; margin-top: 4px; color: var(--ink); line-height: 1.3; }
+
+  /* Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+    .anim-up { opacity: 1 !important; transform: none !important; transition: none !important; }
+    .bar-anim { transform: scaleX(1) !important; transition: none !important; }
+    .hl-path { stroke-dashoffset: 0 !important; transition: none !important; }
+    .sheen, .flow-line, .spinner, .skel { animation: none !important; }
+  }
+
+  /* ==================== MOBILE-FIRST EDITORIAL EXPERIENCE (<= 900PX) ==================== */
+  @media (max-width: 900px) {
+    html { background: var(--paper); }
+    body { font-size: 15.5px; }
+    .mobile-top { display: flex; }
+    .deck-bar { display: none; }
+    .deck-stage { padding: 0; gap: 0; min-height: auto; display: block; }
+
+    .page {
+      display: flex !important;
+      width: 100%;
+      min-height: auto;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 48px 20px 46px;
+      border-bottom: 1px solid var(--line);
+      scroll-margin-top: 52px;
+    }
+    .runhead { position: static; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line); font-size: 0.7rem; }
+    .pfoot, .pnum, .wm-art, .cover-art-left, .cover-art-right { display: none; }
+
+    .cover, .closing-page { padding: 52px 22px 46px; min-height: 82vh; justify-content: center; }
+    .cover-frame { inset: 12px; }
+    .cover .mark { width: 158px; margin-bottom: 22px; }
+    .cover .meta {
+      position: static;
+      margin-top: 32px;
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, 0.24);
+      padding-top: 18px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .cover .meta > div:last-child { text-align: left !important; }
+
+    .toc { grid-template-columns: 1fr 1fr; gap: 18px 18px; }
+    .split, .stores, .speed-grid, .proofgrid, .serps, .gaps-3, .socrow, .dos, .engines-3x2, .matrixwrap, .phases, .calcrow, .three, .about-grid, .cases {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .chans, .qr-bar, .sim-kpi-strip { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .rings-mini { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+
+    .corridor-desktop { display: none; }
+    .corridor-mobile { display: block; }
+
+    /* Mobile Competitor Cards */
+    .table-wrap { border: none; background: transparent; box-shadow: none; }
+    .comp-table thead { display: none; }
+    .comp-table, .comp-table tbody, .comp-table tr, .comp-table td { display: block; width: 100%; }
+    .comp-table tr {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      margin-bottom: 12px;
+      padding: 14px 16px;
+    }
+    .comp-table tr.hot { border-color: var(--mag); background: #FFF7FB; }
+    .comp-table td { padding: 4px 0; border: none; font-size: 0.88rem; }
+    .comp-table td[data-label]::before { content: attr(data-label) ": "; font-weight: 700; color: var(--ink); }
+
+    .cat-strip { flex-direction: column; align-items: flex-start; }
+    .spf-alert { border-left: none; border-top: 2px solid var(--bad); padding-left: 0; padding-top: 12px; max-width: none; width: 100%; }
+
+    .matrix-box { display: none; }
+    .chan-pills { display: flex; }
+    .detail-card { min-height: auto; padding: 20px; }
+
+    .swipe-hint { display: block; }
+    .gdetail { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .gdetail-kpi { text-align: left; min-width: 0; }
+    .port-btn, .closing-cta { width: 100%; text-align: center; }
+  }
+
+  @media (max-width: 480px) {
+    .toc, .chans, .qr-bar, .bigstats, .phones-compare { grid-template-columns: 1fr; }
+  }
+
+  /* Print as Full-Bleed 16:9 Executive Landscape PDF */
+  @page { size: 338.7mm 190.5mm; margin: 0; }
+  @media print {
+    html, body { background: #fff; }
+    .deck-bar, .ov-modal, .dev-btn, .mobile-top, .swipe-hint, .chan-pills, .corridor-mobile { display: none !important; }
+    .deck-stage { padding: 0; gap: 0; display: block; }
+    .page {
+      display: flex !important;
+      width: 338.7mm;
+      height: 190.5mm;
+      min-height: 0;
+      margin: 0;
+      border-radius: 0;
+      box-shadow: none;
+      break-after: page;
+      page-break-after: always;
+    }
+    .anim-up { opacity: 1 !important; transform: none !important; }
+    .bar-anim { transform: scaleX(1) !important; }
+    .hl-path { stroke-dashoffset: 0 !important; }
+    .sheen, .flow-line, .spinner, .skel { animation: none !important; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MOBILE STICKY NAVIGATION -->
+<header class="mobile-top">
+  <div class="mobile-brand">
+    <img class="gg-badge" alt="GG" />
+    <span>Glossy Glow Plan</span>
+  </div>
+  <div class="mobile-actions">
+    <button class="mob-btn" onclick="toggleOverview()">Chapters</button>
+    <button class="mob-btn solid" onclick="goPage(15)">ROI Model</button>
+  </div>
+</header>
+
+<main class="deck-stage">
+
+  <!-- ==================== 01: COVER ==================== -->
+  <section class="page cover active in-view" id="slide-1" data-title="Cover: Glossy Glow Strategy Plan">
+    <div class="sheen"></div>
+    <div class="cover-frame"></div>
+
+    <!-- Subtle Luxury Beauty Line-Art Accents -->
+    <svg class="cover-art-left" viewBox="0 0 180 340" fill="none" stroke="#FFFFFF" stroke-width="1.4">
+      <rect x="44" y="128" width="92" height="148" rx="18"/>
+      <rect x="64" y="158" width="52" height="72" rx="4"/>
+      <rect x="70" y="96" width="40" height="32" rx="4"/>
+      <rect x="58" y="64" width="64" height="32" rx="6"/>
+      <circle cx="90" cy="40" r="10"/>
+      <path d="M90 14 V24 M64 26 L72 34 M116 26 L108 34"/>
+    </svg>
+    <svg class="cover-art-right" viewBox="0 0 180 340" fill="none" stroke="#FFFFFF" stroke-width="1.4">
+      <path d="M90 290 C90 210 50 165 50 110 C50 75 72 52 90 40 C108 52 130 75 130 110 C130 165 90 210 90 290 Z"/>
+      <path d="M90 290 V75"/>
+      <path d="M90 190 C118 175 134 150 138 124"/>
+      <path d="M90 155 C66 142 54 124 52 104"/>
+      <circle cx="136" cy="70" r="6"/>
+      <circle cx="44" cy="210" r="4"/>
+    </svg>
+
+    <img class="mark anim-up" src="data:image/png;base64,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" alt="Glossy Glow Logo" />
+    <div class="cover-kicker anim-up d1">Head of Growth &amp; Marketing | Pre-Interview Strategy Plan</div>
+    <h1 class="anim-up d2">Growth Strategy &amp; 90-Day Execution Plan</h1>
+    <p class="sub anim-up d3">Live Website Audit, Real Mall &amp; Digital Competitor Playbook, Social Turnaround &amp; Revenue Roadmap for Glossy Glow</p>
+
+    <div class="meta">
+      <div>
+        Prepared for
+        <b>Managing Director &amp; Leadership Team, Glossy Glow</b>
+      </div>
+      <div>
+        Prepared by
+        <b>Rahad Arefin | <a href="https://www.rahadarefin.com" target="_blank" rel="noopener">www.rahadarefin.com</a></b>
+      </div>
+      <div style="text-align:right;">
+        Dhaka, Bangladesh
+        <b>November 2026</b>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 02: CONTENTS ==================== -->
+  <section class="page" id="slide-2" data-title="Inside This Plan">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>Strategy &amp; Execution Plan</div>
+    </div>
+
+    <div class="chap">Inside this plan</div>
+    <h2>Eight chapters, from revenue leaks to 90-day scale</h2>
+    <p class="lead">Built from live audits of glossyglow.com.bd, your Instagram &amp; YouTube channels, your 3 Dhaka retail branches, and direct mall competitors. Tap any chapter to jump straight there.</p>
+
+    <div class="toc">
+      <button class="toc-item anim-up" onclick="goPage(2)">
+        <div class="n">01</div>
+        <b>Executive Diagnosis</b>
+        <span>Why more ad money will not fix a leaking bucket</span>
+      </button>
+      <button class="toc-item anim-up d1" onclick="goPage(3)">
+        <div class="n">02</div>
+        <b>Your 3-Store Moat</b>
+        <span>Uttara, Police Plaza &amp; Airport as one flywheel</span>
+      </button>
+      <button class="toc-item anim-up d2" onclick="goPage(4)">
+        <div class="n">03</div>
+        <b>Real Competitors</b>
+        <span>Beautyology 14 shops away, Police Plaza &amp; Shajgoj</span>
+      </button>
+      <button class="toc-item anim-up d3" onclick="goPage(6)">
+        <div class="n">04</div>
+        <b>Website Audit</b>
+        <span>12.7s wait, live YANY/cart bugs &amp; split domain</span>
+      </button>
+      <button class="toc-item anim-up" onclick="goPage(9)">
+        <div class="n">05</div>
+        <b>Social Media Audit</b>
+        <span>Why 5 posts/day killed reach &amp; what wins 7x to 20x</span>
+      </button>
+      <button class="toc-item anim-up d1" onclick="goPage(10)">
+        <div class="n">06</div>
+        <b>Growth Loop &amp; Engines</b>
+        <span>Compounding loop, 6 engines &amp; 5 new channels</span>
+      </button>
+      <button class="toc-item anim-up d2" onclick="goPage(13)">
+        <div class="n">07</div>
+        <b>90-Day Plan &amp; ROI</b>
+        <span>12-week Gantt, finish lines &amp; live BDT simulator</span>
+      </button>
+      <button class="toc-item anim-up d3" onclick="goPage(16)">
+        <div class="n">08</div>
+        <b>Budget &amp; Leadership</b>
+        <span>80/20 allocation &amp; Rahad Arefin track record</span>
+      </button>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">02</div>
+  </section>
+
+  <!-- ==================== 03: EXECUTIVE DIAGNOSIS ==================== -->
+  <section class="page blush" id="slide-3" data-title="Executive Diagnosis: Fix the Bucket First">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>01 / Executive Diagnosis</div>
+    </div>
+
+    <div class="chap">The situation in one page</div>
+    <h2>More ad money will not fix a leaking bucket</h2>
+
+    <div class="split">
+      <div class="anim-up">
+        <div class="quote">
+          "Glossy Glow already owns what online-only beauty rivals spend crores trying to buy: three real Dhaka mall stores and genuine global brands. Right now, fixable mobile and trust leaks turn away 6 in 10 buyers before checkout."
+        </div>
+        <div class="bigstats">
+          <div><b data-count="12.7" data-dec="1" data-suffix="s">12.7s</b><span>Mobile tap delay (100% phone traffic)</span></div>
+          <div><b data-count="0.05" data-dec="2" data-suffix="%">0.05%</b><span>Instagram engagement (0 to 2 likes/post)</span></div>
+          <div><b>2 Sites</b><span>glossyglow.com.bd &amp; glossyglowbd.com split traffic</span></div>
+          <div><b>2.2x to 3x</b><span>90-day revenue upside once leaks are plugged</span></div>
+        </div>
+      </div>
+
+      <div class="card-panel anim-up d2">
+        <div class="kicker-sm">Where Every 100 Mobile Ad Clicks Go Today</div>
+        <svg viewBox="0 0 500 285" width="100%" style="max-height:290px;">
+          <rect class="bar-anim" x="6" y="8" width="488" height="44" rx="8" fill="#220E1A"/>
+          <text x="20" y="35" fill="#fff" font-size="13" font-weight="700">100 Mobile Shoppers Tap Your Link</text>
+          <text x="480" y="35" text-anchor="end" fill="#FF79B8" font-size="13" font-weight="700">100%</text>
+
+          <text x="275" y="70" fill="#C42334" font-size="11.5" font-weight="700">-58 leave during 12.7s slow load</text>
+          <rect class="bar-anim" x="6" y="78" width="250" height="44" rx="8" fill="#D4086A" style="transition-delay:0.12s;"/>
+          <text x="20" y="105" fill="#fff" font-size="12.5" font-weight="700">42 See Storefront</text>
+          <text x="242" y="105" text-anchor="end" fill="#FFD1E6" font-size="12.5" font-weight="700">42%</text>
+
+          <text x="180" y="140" fill="#C42334" font-size="11.5" font-weight="700">-26 drop on trust bugs &amp; dead links</text>
+          <rect class="bar-anim" x="6" y="148" width="155" height="44" rx="8" fill="#8A0445" style="transition-delay:0.24s;"/>
+          <text x="18" y="175" fill="#fff" font-size="12" font-weight="700">16 View Item</text>
+          <text x="148" y="175" text-anchor="end" fill="#F8D9E8" font-size="12" font-weight="700">16%</text>
+
+          <text x="122" y="210" fill="#C42334" font-size="11.5" font-weight="700">-15 leave with zero skin guidance</text>
+          <rect class="bar-anim" x="6" y="218" width="104" height="44" rx="8" fill="#167F52" style="transition-delay:0.36s;"/>
+          <text x="18" y="245" fill="#fff" font-size="12.5" font-weight="700">1 Order</text>
+          <text x="98" y="245" text-anchor="end" fill="#BBF7D0" font-size="12" font-weight="700">~0.8%</text>
+
+          <text x="122" y="245" fill="#167F52" font-size="11.5" font-weight="700">Day 60 Target: 2.0%+ (2.5x more sales)</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">03</div>
+  </section>
+
+  <!-- ==================== 04: 3-STORE MOAT ==================== -->
+  <section class="page" id="slide-4" data-title="Your Unfair Advantage: 3 Dhaka Mall Stores">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>02 / Unfair Omnichannel Moat</div>
+    </div>
+
+    <div class="chap">The advantage online-only rivals cannot copy</div>
+    <h2>Three high-trust stores along one North Dhaka corridor</h2>
+
+    <div class="corridor-desktop anim-up">
+      <svg viewBox="0 0 980 120" width="100%" style="max-height:118px;">
+        <line class="flow-line" x1="120" y1="54" x2="860" y2="54" stroke="#D4086A" stroke-width="3.5"/>
+        <circle cx="135" cy="54" r="17" fill="#D4086A"/>
+        <text x="135" y="59" text-anchor="middle" fill="#fff" font-size="12" font-weight="800">01</text>
+        <text x="135" y="24" text-anchor="middle" fill="#220E1A" font-size="13.5" font-weight="700">Uttara Square (Sec-13)</text>
+        <text x="135" y="94" text-anchor="middle" fill="#6C5764" font-size="11.5">Shop #104, GF | Residential &amp; Youth</text>
+
+        <rect x="268" y="39" width="104" height="28" rx="14" fill="#fff" stroke="#EED5E2"/>
+        <text x="320" y="57" text-anchor="middle" fill="#8A0445" font-size="10.5" font-weight="700">~15 min drive</text>
+
+        <circle cx="490" cy="54" r="17" fill="#B08543"/>
+        <text x="490" y="59" text-anchor="middle" fill="#fff" font-size="12" font-weight="800">02</text>
+        <text x="490" y="24" text-anchor="middle" fill="#220E1A" font-size="13.5" font-weight="700">Center Point Airport</text>
+        <text x="490" y="94" text-anchor="middle" fill="#6C5764" font-size="11.5">Shop #C10, L2 | Travelers &amp; NRB Gifts</text>
+
+        <rect x="612" y="39" width="116" height="28" rx="14" fill="#fff" stroke="#EED5E2"/>
+        <text x="670" y="57" text-anchor="middle" fill="#8A0445" font-size="10.5" font-weight="700">North Dhaka Spine</text>
+
+        <circle cx="845" cy="54" r="17" fill="#220E1A"/>
+        <text x="845" y="59" text-anchor="middle" fill="#fff" font-size="12" font-weight="800">03</text>
+        <text x="845" y="24" text-anchor="middle" fill="#220E1A" font-size="13.5" font-weight="700">Police Plaza (Gulshan-1)</text>
+        <text x="845" y="94" text-anchor="middle" fill="#6C5764" font-size="11.5">Shop #318, L2 | Luxury &amp; Corporate</text>
+      </svg>
+    </div>
+
+    <div class="corridor-mobile">
+      North Dhaka Spine: 01 Uttara Square → 02 Center Point Airport → 03 Police Plaza Gulshan-1
+    </div>
+
+    <div class="stores">
+      <div class="store anim-up d1">
+        <small>01 | Uttara Square (01901924951)</small>
+        <b>Daily Skincare &amp; Express Hub</b>
+        <p>Shop #104, GF. Win university &amp; family traffic with K-Beauty combos, TikTok filming, and <strong>2-hour Uttara dispatch</strong> straight from shelf stock.</p>
+      </div>
+      <div class="store anim-up d2">
+        <small>02 | Center Point Airport (01901924953)</small>
+        <b>Traveler &amp; NRB Gifting Hub</b>
+        <p>Shop #C10, L2. Capture arriving diaspora &amp; flyers with ready-wrapped luxury gift boxes (Tk 3,500 to 25,000) and travel-size kits.</p>
+      </div>
+      <div class="store anim-up d3">
+        <small>03 | Police Plaza Gulshan-1 (01901924952)</small>
+        <b>Luxury Studio &amp; B2B Desk</b>
+        <p>Shop #318, L2. Serve high-margin Chanel, MAC &amp; CeraVe buyers, host creator shoots, Weekly Friday Live Shopping &amp; Gulshan corporate gifting.</p>
+      </div>
+    </div>
+
+    <div class="qr-bar anim-up d4">
+      <div><strong>1. Counter QR Scan</strong>Walk-in buyer gets Tk 100 voucher</div>
+      <div><strong>2. 20-Sec Maps Review</strong>Rank #1 in Uttara, Gulshan &amp; Airport</div>
+      <div><strong>3. VIP WhatsApp Club</strong>600+ verified buyers captured / mo</div>
+      <div class="qr-last"><strong>4. Day-40 Auto Refill</strong>1-tap online reorder, 2-hr delivery</div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">04</div>
+  </section>
+
+  <!-- ==================== 05: COMPETITOR LANDSCAPE (DE-CROWDED!) ==================== -->
+  <section class="page blush" id="slide-5" data-title="Competitor Landscape: Beautyology & Dhaka Map">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>03 / Competitor Landscape</div>
+    </div>
+
+    <div class="chap">Who you actually compete against</div>
+    <h2>Beautyology sits 14 shops away on your Uttara floor</h2>
+
+    <div class="split">
+      <!-- Left: Large Airy 2x2 Quadrant -->
+      <div class="card-panel anim-up">
+        <div class="kicker-sm">Bangladesh Beauty Retail Positioning Map</div>
+        <svg viewBox="0 0 480 315" width="100%" style="max-height:330px;">
+          <rect x="240" y="24" width="224" height="132" fill="#FDF2F7" rx="8"/>
+          <text x="454" y="42" text-anchor="end" fill="#D4086A" font-size="10" font-weight="700">GLOSSY GLOW TARGET ZONE</text>
+          <line x1="240" y1="22" x2="240" y2="292" stroke="#C7B2BE" stroke-width="1.5"/>
+          <line x1="18" y1="156" x2="466" y2="156" stroke="#C7B2BE" stroke-width="1.5"/>
+
+          <text x="240" y="14" text-anchor="middle" fill="#220E1A" font-size="10.5" font-weight="700">MULTI-STORE + DIGITAL TRUST</text>
+          <text x="240" y="309" text-anchor="middle" fill="#6C5764" font-size="10.5">ONLINE-FIRST / TRUST GAP</text>
+          <text x="20" y="148" fill="#6C5764" font-size="9.5">BROAD / PRIVATE LABEL</text>
+          <text x="464" y="148" text-anchor="end" fill="#220E1A" font-size="9.5" font-weight="700">CURATED GLOBAL AUTHENTIC</text>
+
+          <circle cx="135" cy="88" r="10" fill="#6C5764"/>
+          <text x="135" y="111" text-anchor="middle" fill="#220E1A" font-size="11" font-weight="700">Shajgoj</text>
+
+          <circle cx="176" cy="56" r="10" fill="#B08543"/>
+          <text x="176" y="40" text-anchor="middle" fill="#8A5A10" font-size="11" font-weight="700">Beautyology (13+ stores)</text>
+
+          <circle cx="318" cy="96" r="9" fill="#6C5764"/>
+          <text x="318" y="118" text-anchor="middle" fill="#220E1A" font-size="10.5" font-weight="700">BanglaShoppers</text>
+
+          <circle cx="330" cy="212" r="9" fill="#9D8794"/>
+          <text x="330" y="234" text-anchor="middle" fill="#6C5764" font-size="10.5">OHSOGO / Beauty Booth</text>
+
+          <circle cx="130" cy="226" r="8" fill="#9D8794"/>
+          <text x="130" y="248" text-anchor="middle" fill="#6C5764" font-size="10.5">Carnesia / Mall BD</text>
+
+          <circle cx="272" cy="256" r="9" fill="#FEE2E2" stroke="#C42334" stroke-width="2"/>
+          <text x="272" y="278" text-anchor="middle" fill="#C42334" font-size="10.5" font-weight="700">GG Today</text>
+
+          <path class="flow-line" d="M 282 246 Q 355 178 394 86" fill="none" stroke="#D4086A" stroke-width="2.6"/>
+          <circle cx="400" cy="72" r="16" fill="#D4086A"/>
+          <text x="400" y="76" text-anchor="middle" fill="#fff" font-size="10.5" font-weight="800">GG</text>
+          <text x="400" y="102" text-anchor="middle" fill="#D4086A" font-size="11.5" font-weight="800">Glossy Glow (Day 90)</text>
+        </svg>
+      </div>
+
+      <!-- Right: 3 Crisp Field Findings -->
+      <div class="anim-up d2">
+        <div class="alert-banner">
+          <div class="alert-dot"></div>
+          <div style="font-size:0.92rem; line-height:1.48;">
+            <strong style="color:var(--mag);">Same-Floor Reality:</strong> Glossy Glow is <strong>Shop #104 (GF, Uttara Square)</strong>. <strong>Beautyology</strong> is <strong>Shop #118</strong> on the exact same floor, backed by 13+ outlets, a Banani clinic, and private-label skincare (Auravia, Dermexen).
+          </div>
+        </div>
+
+        <div class="insight-stack">
+          <div class="insight-item">
+            <b>Police Plaza Concord Has 3 Direct In-Mall Rivals</b>
+            <p>Lira Import (Shop #132-133 GF), La Reina (Store #113 luxury perfumes) &amp; ShineSkin BD (Shop #420 K-Beauty) compete daily for the same Gulshan-1 shoppers as your Shop #318.</p>
+          </div>
+          <div class="insight-item">
+            <b>Why Glossy Glow Wins Without Outspending Giants</b>
+            <p>Beautyology pushes house brands; Shajgoj feels mass-market; online shops face fake-product doubt. Glossy Glow owns the exact white space: <strong>Curated 100% Authentic Global Brands + 3 Mall Stores + Fast Local Advisory.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">05</div>
+  </section>
+
+  <!-- ==================== 06: COMPETITOR COUNTER-PLAYBOOK (DE-CROWDED!) ==================== -->
+  <section class="page" id="slide-6" data-title="Competitor Counter-Playbook">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>03 / Competitor Counter-Playbook</div>
+    </div>
+
+    <div class="chap">How we beat each rival</div>
+    <h2>Clear counter-moves against every real competitor</h2>
+
+    <div class="table-wrap anim-up">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th style="width:24%;">Competitor</th>
+            <th style="width:36%;">How They Win Today</th>
+            <th style="width:40%;">Glossy Glow's Winning Counter-Move</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hot">
+            <td><strong>Beautyology</strong><br/><span class="pill-mini">Uttara Sq #118 (Same Floor)</span></td>
+            <td data-label="Strength">13+ outlets, Banani clinic, dark-spot &amp; acne combos, aggressively pushes private-label brands (Auravia).</td>
+            <td data-label="Counter-Move">Win as the <strong>100% authentic global brand specialist</strong> (CeraVe, Bioderma, Ordinary, Chanel) with instant Bangla WhatsApp guidance.</td>
+          </tr>
+          <tr>
+            <td><strong>Police Plaza Rivals</strong><br/><span class="pill-mini">Lira, La Reina, ShineSkin</span></td>
+            <td data-label="Strength">Lira &amp; La Reina attract Gulshan luxury walk-ins; ShineSkin captures K-beauty mall footfall.</td>
+            <td data-label="Counter-Move">Beat them digitally: dominate Google Maps #1, film weekly creator "Shop With Me" Reels from Shop #318, and offer 2-hr Gulshan delivery.</td>
+          </tr>
+          <tr>
+            <td><strong>Shajgoj &amp; BanglaShoppers</strong><br/><span class="pill-mini">National Retail Leaders</span></td>
+            <td data-label="Strength">Huge 10,000+ SKU catalog, strong SEO beauty blogs, app loyalty &amp; price-match scale.</td>
+            <td data-label="Counter-Move">Win on <strong>curation, speed &amp; warmth</strong>: ready-made skin-concern kits, 2-min WhatsApp advisor &amp; exclusive Airport traveler gifts.</td>
+          </tr>
+          <tr>
+            <td><strong>Bio-Xin (Uttara)</strong><br/><span class="pill-mini">Sonargaon Janapath</span></td>
+            <td data-label="Strength">Captures Uttara acne &amp; pigmentation buyers through clinic-backed consultation authority.</td>
+            <td data-label="Counter-Move">Publish weekly Bangla ingredient-education Reels + free 1-on-1 WhatsApp skin routine builder for Uttara shoppers.</td>
+          </tr>
+          <tr>
+            <td><strong>OHSOGO, Beauty Booth, Mall BD</strong><br/><span class="pill-mini">Online-First Challengers</span></td>
+            <td data-label="Strength">Aggressive social ads, Tk 19 delivery promos, fast trend launches.</td>
+            <td data-label="Counter-Move">Use your <strong>3 physical stores + Open-Box delivery verification</strong> to erase counterfeit fear on high-margin skincare &amp; perfumes.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">06</div>
+  </section>
+
+  <!-- ==================== 07: WEBSITE SPEED + LIVE PHONE WAIT VISUAL ==================== -->
+  <section class="page blush" id="slide-7" data-title="Website Audit: 12.7s Mobile Wait">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>04 / Website Audit: Speed &amp; Mobile UX</div>
+    </div>
+
+    <div class="chap">Website audit: speed</div>
+    <h2>Your shopper waits 12.7 seconds. She gives up at 3.</h2>
+
+    <div class="speed-grid">
+      <!-- Left: Visual Phone Wait Comparison -->
+      <div class="anim-up">
+        <div class="phones-compare">
+          <!-- Slow Phone -->
+          <div class="phone-frame">
+            <div class="phone-screen" style="background:#FFF8FA;">
+              <div>
+                <div class="phone-notch"></div>
+                <div style="font-size:0.7rem; font-weight:800; color:var(--bad); text-align:center; margin-bottom:10px;">TODAY: GLOSSY GLOW</div>
+                <div class="skel" style="height:68px; margin-bottom:10px;"></div>
+                <div class="skel" style="height:14px; width:80%; margin-bottom:8px;"></div>
+                <div class="skel" style="height:14px; width:55%; margin-bottom:16px;"></div>
+              </div>
+              <div style="text-align:center; padding:8px 0;">
+                <div class="spinner"></div>
+                <strong style="font-family:var(--mono); font-size:1.15rem; color:var(--bad);" id="waitClock">12.7s</strong>
+                <div style="font-size:0.7rem; color:var(--soft); margin-top:2px;">Waiting to tap "Buy Now"...</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fast Phone -->
+          <div class="phone-frame" style="background:#163024;">
+            <div class="phone-screen">
+              <div>
+                <div class="phone-notch"></div>
+                <div style="font-size:0.7rem; font-weight:800; color:var(--good); text-align:center; margin-bottom:10px;">DAY 15 TARGET</div>
+                <div style="background:linear-gradient(135deg,#FDF2F7,#F8D9E8); border-radius:10px; padding:12px; text-align:center; margin-bottom:10px;">
+                  <div style="font-size:0.72rem; color:var(--mag); font-weight:700;">100% AUTHENTIC</div>
+                  <div style="font-family:var(--serif); font-size:0.95rem; color:var(--ink); margin-top:2px;">CeraVe Cleanser</div>
+                  <div style="font-weight:800; font-size:0.86rem; color:var(--ink); margin-top:3px;">Tk 2,850</div>
+                </div>
+                <div style="background:var(--mag); color:#fff; border-radius:99px; text-align:center; padding:7px; font-size:0.72rem; font-weight:700; margin-bottom:6px;">Buy Now (COD)</div>
+                <div style="background:#ECFDF5; color:var(--good); border-radius:99px; text-align:center; padding:6px; font-size:0.68rem; font-weight:700;">Ask WhatsApp Advisor</div>
+              </div>
+              <div style="text-align:center; border-top:1px solid var(--line); padding-top:8px;">
+                <strong style="font-family:var(--mono); font-size:1.05rem; color:var(--good);">2.3s</strong>
+                <div style="font-size:0.7rem; color:var(--soft);">Instant tap-to-order</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; margin-top:10px;">
+          <button class="dev-btn" style="margin-top:0;" onclick="replayWait()">↻ Replay 12.7s Wait Timer</button>
+        </div>
+      </div>
+
+      <!-- Right: Animated Score Rings + Waterfall -->
+      <div class="anim-up d2">
+        <div class="rings-mini">
+          <div class="ringc">
+            <svg width="46" height="46" viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="#F8D9E8" stroke-width="6"/><circle class="ring-arc" data-offset="68" cx="32" cy="32" r="26" fill="none" stroke="#C97A0C" stroke-width="6" stroke-dasharray="163" stroke-dashoffset="163" transform="rotate(-90 32 32)"/><text x="32" y="38" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#220E1A">C</text></svg>
+            <b>Overall</b>
+          </div>
+          <div class="ringc">
+            <svg width="46" height="46" viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="#F8D9E8" stroke-width="6"/><circle class="ring-arc" data-offset="118" cx="32" cy="32" r="26" fill="none" stroke="#C42334" stroke-width="6" stroke-dasharray="163" stroke-dashoffset="163" transform="rotate(-90 32 32)"/><text x="32" y="38" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#C42334">F</text></svg>
+            <b>Mobile 40</b>
+          </div>
+          <div class="ringc">
+            <svg width="46" height="46" viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="#F8D9E8" stroke-width="6"/><circle class="ring-arc" data-offset="140" cx="32" cy="32" r="26" fill="none" stroke="#C42334" stroke-width="6" stroke-dasharray="163" stroke-dashoffset="163" transform="rotate(-90 32 32)"/><text x="32" y="38" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="#C42334">F</text></svg>
+            <b>4 Links</b>
+          </div>
+          <div class="ringc">
+            <svg width="46" height="46" viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="#F8D9E8" stroke-width="6"/><circle class="ring-arc" data-offset="82" cx="32" cy="32" r="26" fill="none" stroke="#C97A0C" stroke-width="6" stroke-dasharray="163" stroke-dashoffset="163" transform="rotate(-90 32 32)"/><text x="32" y="38" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#C97A0C">C-</text></svg>
+            <b>Speed</b>
+          </div>
+          <div class="ringc">
+            <svg width="46" height="46" viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="#F8D9E8" stroke-width="6"/><circle class="ring-arc" data-offset="36" cx="32" cy="32" r="26" fill="none" stroke="#B08543" stroke-width="6" stroke-dasharray="163" stroke-dashoffset="163" transform="rotate(-90 32 32)"/><text x="32" y="38" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#220E1A">B+</text></svg>
+            <b>Copy</b>
+          </div>
+          <div class="ringc">
+            <svg width="46" height="46" viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="#F8D9E8" stroke-width="6"/><circle class="ring-arc" data-offset="22" cx="32" cy="32" r="26" fill="none" stroke="#167F52" stroke-width="6" stroke-dasharray="163" stroke-dashoffset="163" transform="rotate(-90 32 32)"/><text x="32" y="38" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#167F52">A-</text></svg>
+            <b>AI Ready</b>
+          </div>
+        </div>
+
+        <div class="wf-list">
+          <div class="wf-row">
+            <div class="wf-top"><span>Target Fast Beauty Store</span><span style="color:var(--good);">2.5 sec</span></div>
+            <div class="wf-tr"><div class="wf-fl bar-anim" style="width:20%; background:var(--good);">2.5s</div></div>
+          </div>
+          <div class="wf-row">
+            <div class="wf-top"><span>First Visual Appears (LCP)</span><span style="color:var(--warn);">5.2 sec</span></div>
+            <div class="wf-tr"><div class="wf-fl bar-anim" style="width:41%; background:var(--warn); transition-delay:0.1s;">5.2s</div></div>
+          </div>
+          <div class="wf-row">
+            <div class="wf-top"><span>Server Wake-Up Delay</span><span style="color:#B45309;">5.9 sec</span></div>
+            <div class="wf-tr"><div class="wf-fl bar-anim" style="width:46%; background:#B45309; transition-delay:0.18s;">5.9s</div></div>
+          </div>
+          <div class="wf-row">
+            <div class="wf-top"><span>Ready to Tap "Buy Now"</span><span style="color:var(--deep);">12.7 sec (6 in 10 left)</span></div>
+            <div class="wf-tr"><div class="wf-fl bar-anim" style="width:100%; background:var(--deep); transition-delay:0.26s;">12.7s</div></div>
+          </div>
+        </div>
+
+        <button class="dev-btn" onclick="toggleDev(this)">+ Show Developer Speed Fix Brief</button>
+        <div class="dev-box">1) Put Cloudflare CDN + ISR cache over Next.js; cut software.glossyglow.com.bd TTFB from 5.9s to &lt;400ms. 2) Switch unencrypted http:// images to https:// and replace w=1920 on tiny thumbnails with mobile widths. 3) Fix JS load errors, remove duplicate hero/outlet DOM renders, prune 401 links to &lt;150.</div>
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">07</div>
+  </section>
+
+  <!-- ==================== 08: WEBSITE AUDIT - LIVE PROOF (SELF-DRAWING RED CIRCLES!) ==================== -->
+  <section class="page" id="slide-8" data-title="Website Audit: Live Trust Evidence">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>04 / Website Audit: Live Trust Evidence</div>
+    </div>
+
+    <div class="chap">Website audit: trust</div>
+    <h2>What a first-time buyer actually sees before checkout</h2>
+
+    <div class="proofgrid">
+      <div class="shot anim-up">
+        <div class="bar"><i></i><i></i><i></i><span>glossyglow.com.bd (Homepage)</span></div>
+        <div class="body">
+          <div>
+            <div style="font-family:var(--serif); font-size:1.1rem; margin-bottom:10px;">Why Customers Keep Coming Back</div>
+            <div style="font-size:0.92rem; line-height:1.65;">
+              "Real reviews, routines, tutorials, and favorite finds from the
+              <span class="hl-wrap">YANY community
+                <svg class="hl-svg" viewBox="0 0 180 44" preserveAspectRatio="none"><path class="hl-path" d="M12,24 C10,6 165,4 170,22 C174,38 18,40 10,25"/></svg>
+              </span>."
+            </div>
+          </div>
+          <div class="why">
+            <strong>Cost:</strong> Another brand's name on your homepage makes Tk 2,850 CeraVe or Tk 22,500 Chanel buyers question authenticity. <strong>Fix: 10 mins.</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="shot anim-up d1">
+        <div class="bar"><i></i><i></i><i></i><span>glossyglow.com.bd (Cart &amp; Shade Drawer)</span></div>
+        <div class="body">
+          <div>
+            <div style="background:#FAF7F9; border:1px solid var(--line); border-radius:10px; padding:12px; margin-bottom:10px;">
+              <strong style="font-size:0.88rem;">cart: (0 item)</strong><br/>
+              <span class="hl-wrap" style="font-size:0.86rem; margin-top:4px;">This is a regular side drawer
+                <svg class="hl-svg" viewBox="0 0 210 44" preserveAspectRatio="none"><path class="hl-path" d="M10,24 C8,6 196,4 202,22 C206,38 18,40 10,25"/></svg>
+              </span>
+            </div>
+            <div style="background:#FAF7F9; border:1px solid var(--line); border-radius:10px; padding:10px 12px; font-size:0.82rem; color:var(--soft);">
+              Select Variant: <strong style="color:var(--bad);">"This is a regular side drawer"</strong>
+            </div>
+          </div>
+          <div class="why">
+            <strong>Cost:</strong> Raw developer demo text appears inside the exact drawer where shoppers pick shades and tap Checkout. <strong>Fix: 30 mins.</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="shot anim-up d2">
+        <div class="bar"><i></i><i></i><i></i><span>glossyglow.com.bd (Product &amp; Footer)</span></div>
+        <div class="body">
+          <div style="font-size:0.88rem; line-height:1.65;">
+            <div style="margin-bottom:8px;">
+              Brand link routes to:<br/>
+              <span class="hl-wrap" style="font-family:var(--mono); font-size:0.78rem;">/brands?slug=undefined
+                <svg class="hl-svg" viewBox="0 0 200 44" preserveAspectRatio="none"><path class="hl-path" d="M10,24 C8,6 186,4 192,22 C196,38 18,40 10,25"/></svg>
+              </span>
+            </div>
+            <div>SKU: <strong style="color:var(--bad);">[blank]</strong> | Reviews: <strong style="color:var(--bad);">[none]</strong></div>
+            <div style="margin-top:6px;">Typos: <code style="color:var(--bad);">Jewellary</code>, <code style="color:var(--bad);">Woman Accessories</code>, <code style="color:var(--bad);">Open: 11AM - `8 PM</code></div>
+          </div>
+          <div class="why">
+            <strong>Cost:</strong> Dead brand links cut browsing &amp; basket size; typos weaken premium positioning. <strong>Fix: 1 day.</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cat-strip anim-up d3">
+      <div>
+        <strong style="color:var(--ink);">Positioning Dilution:</strong> Curated beauty sits beside unrelated items:
+        <div class="cat-tags">
+          <span class="ctag">Skincare</span>
+          <span class="ctag">Make-Up</span>
+          <span class="ctag">Fragrance</span>
+          <span class="ctag">Hair Care</span>
+          <span class="ctag odd">Electronics</span>
+          <span class="ctag odd">Ladies Bag</span>
+          <span class="ctag odd">Jewellary</span>
+          <span class="ctag odd">Men's Accessories</span>
+        </div>
+      </div>
+      <div class="spf-alert">
+        <strong style="color:var(--bad);">Missing SPF Email Record:</strong> Order confirmations &amp; Eid promo emails risk going straight to Gmail Spam (15-min DNS fix).
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">08</div>
+  </section>
+
+  <!-- ==================== 09: SPLIT DOMAIN & GOOGLE SERP ==================== -->
+  <section class="page blush" id="slide-9" data-title="Website Audit: Split Domain & Google Search">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>04 / Website Audit: Search &amp; AI Visibility</div>
+    </div>
+
+    <div class="chap">Website audit: being found</div>
+    <h2>Two live websites are splitting your Google traffic in half</h2>
+
+    <div class="serps">
+      <div class="serp anim-up">
+        <span class="serp-badge" style="background:#FEE2E2; color:var(--bad);">TODAY ON GOOGLE (SPLIT &amp; PLAIN)</span>
+        <div class="serp-item">
+          <div class="serp-u">https://www.glossyglowbd.com &nbsp;(OLD SITE STILL LIVE!)</div>
+          <div class="serp-t">Glossy Glow | Your Trusted Online Store for Best Deals</div>
+          <div class="serp-d">Lists old email <strong>glossyglow33@gmail.com</strong>. Directories like Moumachi still send buyers here instead of your new store.</div>
+        </div>
+        <div class="serp-item">
+          <div class="serp-u">https://www.glossyglow.com.bd &nbsp;(Only 4 backlinks from 1 site)</div>
+          <div class="serp-t">Glossy Glow - Authentic Cosmetics &amp; Skincare Shop in Bangladesh</div>
+          <div class="serp-d">No Tk prices, no star ratings, no 3 Dhaka store map pins, 2 H1 tags, skipped headings.</div>
+        </div>
+      </div>
+
+      <div class="serp anim-up d2" style="border-color:var(--good); background:#FAFEFC;">
+        <span class="serp-badge" style="background:#DCFCE7; color:var(--good);">DAY 60 TARGET (UNIFIED &amp; RICH)</span>
+        <div class="serp-item" style="background:#fff; border-color:#BBF7D0;">
+          <div class="serp-u">https://www.glossyglow.com.bd &nbsp;(glossyglowbd.com 301 merged here)</div>
+          <div class="serp-t">Glossy Glow | Authentic Skincare, Makeup &amp; Perfumes BD</div>
+          <div class="serp-d">100% original CeraVe, Bioderma, The Ordinary, MAC &amp; Chanel. Fast nationwide delivery or visit our 3 Dhaka mall stores.</div>
+          <div class="serp-rich">
+            <span style="color:#D97706;">★★★★★ 4.9 (180+ reviews)</span>
+            <span>In Stock: Tk 285 to Tk 22,500</span>
+            <span style="color:var(--good);">3 Dhaka Stores Open</span>
+          </div>
+        </div>
+        <div class="serp-item" style="background:#FDF2F7; border-color:var(--line);">
+          <div class="serp-u" style="color:var(--mag); font-weight:700;">AI ASSISTANT RECOMMENDATION (GEO GRADE: A-)</div>
+          <div class="serp-d" style="color:var(--ink);">"For authentic CeraVe or Chanel in Dhaka, <strong>Glossy Glow</strong> operates 3 physical stores in Uttara Square, Police Plaza Gulshan-1 &amp; Center Point Airport."</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gaps-3 anim-up d3">
+      <div class="gap-box">
+        <b>1. 48-Hour 301 Domain Merge</b>
+        <span>Redirect every URL of glossyglowbd.com to glossyglow.com.bd and standardize support@glossyglow.com.bd.</span>
+      </div>
+      <div class="gap-box">
+        <b>2. Local + Product Schema</b>
+        <span>Connect all 3 Google Maps branches, show Tk prices &amp; stars in search, fix single H1 and 57-char title tag.</span>
+      </div>
+      <div class="gap-box">
+        <b>3. Authority Sprint (F → B)</b>
+        <span>Publish 12 Bangla/English buying guides and earn 25+ creator, PR &amp; local beauty blog backlinks.</span>
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">09</div>
+  </section>
+
+  <!-- ==================== 10: SOCIAL MEDIA AUDIT ==================== -->
+  <section class="page" id="slide-10" data-title="Social Media Audit: Live Proof">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>05 / Social Media Audit</div>
+    </div>
+
+    <div class="chap">Social media audit</div>
+    <h2>Busy posting, almost zero selling, and one clear winner</h2>
+
+    <div class="chans">
+      <div class="chan anim-up">
+        <div class="h"><span>Instagram</span><span class="v bad">0.05% Eng</span></div>
+        <div class="m" data-count="4089" data-dec="0">4,089</div>
+        <div class="l">0 following. Dumped <strong>5 posts on Nov 21</strong> (1 exact duplicate). Avg 0 to 2 likes.</div>
+      </div>
+      <div class="chan anim-up d1">
+        <div class="h"><span>YouTube</span><span class="v warn">Tiny Base</span></div>
+        <div class="m" data-count="38" data-dec="0">38</div>
+        <div class="l">Duplicate playlists (Glossy Glow vs glossy glow); broken split product URL in Community post.</div>
+      </div>
+      <div class="chan anim-up d2">
+        <div class="h"><span>FB &amp; TikTok</span><span class="v bad">Buried</span></div>
+        <div class="m">Split</div>
+        <div class="l">Search shows 370K unrelated "Glossybd". Split TikTok handle (.bd vs bd). Zero DM order bot.</div>
+      </div>
+      <div class="chan anim-up d3">
+        <div class="h"><span>LinkedIn &amp; Maps</span><span class="v warn">Missing</span></div>
+        <div class="m">0</div>
+        <div class="l">No LinkedIn page for B2B gifting or hiring; 3 mall stores lack active 5-star review velocity.</div>
+      </div>
+    </div>
+
+    <div class="socrow">
+      <div class="anim-up d2">
+        <div class="kicker-sm">Real Recent Views Proof (Nov 18 to 21, 2026)</div>
+        <div class="hbars">
+          <div class="hb">
+            <div class="hb-top"><span>IG: Generic Product Poster (Nov 21)</span><span class="hb-val" style="color:var(--soft);">98 views (0 likes)</span></div>
+            <div class="tr"><div class="fl bar-anim" style="width:12%; background:#9D8794;"></div></div>
+          </div>
+          <div class="hb">
+            <div class="hb-top"><span>IG: Duplicate Oily Skin Post (2x Nov 21)</span><span class="hb-val" style="color:var(--bad);">148 views (0 likes)</span></div>
+            <div class="tr"><div class="fl bar-anim" style="width:19%; background:var(--bad); transition-delay:0.08s;"></div></div>
+          </div>
+          <div class="hb">
+            <div class="hb-top"><span>YT: Generic English Skincare Shorts</span><span class="hb-val" style="color:var(--soft);">39 views</span></div>
+            <div class="tr"><div class="fl bar-anim" style="width:6%; background:#9D8794; transition-delay:0.16s;"></div></div>
+          </div>
+          <div class="hb">
+            <div class="hb-top"><strong style="color:var(--mag);">IG WINNER: Relatable Bangla Humor Reel</strong><span class="hb-val" style="color:var(--mag);">624 views | 15 likes (7.5x)</span></div>
+            <div class="tr"><div class="fl bar-anim" style="width:78%; background:var(--mag); transition-delay:0.24s;"></div></div>
+          </div>
+          <div class="hb">
+            <div class="hb-top"><strong style="color:var(--good);">YT WINNER: Bangla Acne-Free Skin Short</strong><span class="hb-val" style="color:var(--good);">799 views (20x shorts)</span></div>
+            <div class="tr"><div class="fl bar-anim" style="width:100%; background:var(--good); transition-delay:0.32s;"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dos anim-up d3">
+        <div class="stop">
+          <b style="color:var(--bad);">Stop Doing Immediately</b>
+          <ul>
+            <li>Dumping 4 to 5 graphics/day (kills algorithm reach)</li>
+            <li>Faceless catalog captions with no buying trigger</li>
+            <li>Zero community replies or Story polls</li>
+            <li>Unchecked duplicate posts &amp; broken links</li>
+          </ul>
+        </div>
+        <div class="start">
+          <b style="color:var(--good);">Double Down Starting Week 1</b>
+          <ul>
+            <li><strong>1 sharp Bangla Reel/day</strong> + interactive Stories</li>
+            <li>Real beauty advisors filming "Real vs Fake" in-store</li>
+            <li>"Comment GLOW" instant DM price &amp; order bot</li>
+            <li>Weekly Friday Live Shopping from Police Plaza</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">10</div>
+  </section>
+
+  <!-- ==================== 11: GROWTH LOOP (DE-CROWDED CENTERPIECE!) ==================== -->
+  <section class="page blush" id="slide-11" data-title="Growth Strategy: The Compounding Loop">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>06 / Growth Architecture</div>
+    </div>
+
+    <div class="chap">The strategy in one picture</div>
+    <h2>A compounding beauty loop, not one-off ad boosts</h2>
+
+    <div class="split">
+      <!-- Animated Orbital Loop SVG -->
+      <div class="card-panel anim-up" style="text-align:center;">
+        <svg viewBox="0 0 410 330" width="100%" style="max-height:340px;">
+          <defs>
+            <marker id="arMag" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#D4086A"/>
+            </marker>
+          </defs>
+          <path class="flow-line" d="M 264 68 A 108 108 0 0 1 326 144" fill="none" stroke="#D4086A" stroke-width="2.8" marker-end="url(#arMag)"/>
+          <path class="flow-line" d="M 324 196 A 108 108 0 0 1 262 264" fill="none" stroke="#D4086A" stroke-width="2.8" marker-end="url(#arMag)"/>
+          <path class="flow-line" d="M 148 264 A 108 108 0 0 1 86 196" fill="none" stroke="#D4086A" stroke-width="2.8" marker-end="url(#arMag)"/>
+          <path class="flow-line" d="M 84 144 A 108 108 0 0 1 146 68" fill="none" stroke="#D4086A" stroke-width="2.8" marker-end="url(#arMag)"/>
+
+          <circle cx="205" cy="166" r="54" fill="#220E1A"/>
+          <text x="205" y="160" text-anchor="middle" fill="#FF79B8" font-size="10.5" font-weight="700">COMPOUNDING</text>
+          <text x="205" y="178" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">LTV &amp; ROAS</text>
+
+          <rect x="124" y="14" width="162" height="54" rx="12" fill="#FDF2F7" stroke="#D4086A" stroke-width="2"/>
+          <text x="205" y="36" text-anchor="middle" fill="#D4086A" font-size="11" font-weight="800">1. ACQUIRE</text>
+          <text x="205" y="54" text-anchor="middle" fill="#220E1A" font-size="10.5">Bangla Reels + Search + Creators</text>
+
+          <rect x="266" y="142" width="136" height="54" rx="12" fill="#fff" stroke="#220E1A" stroke-width="1.8"/>
+          <text x="334" y="164" text-anchor="middle" fill="#220E1A" font-size="11" font-weight="800">2. CONVERT</text>
+          <text x="334" y="182" text-anchor="middle" fill="#6C5764" font-size="10.5">Fast Site + WA Desk</text>
+
+          <rect x="124" y="256" width="162" height="54" rx="12" fill="#ECFDF5" stroke="#167F52" stroke-width="2"/>
+          <text x="205" y="278" text-anchor="middle" fill="#167F52" font-size="11" font-weight="800">3. RETAIN</text>
+          <text x="205" y="296" text-anchor="middle" fill="#220E1A" font-size="10.5">45-Day Refills + Kits</text>
+
+          <rect x="8" y="142" width="136" height="54" rx="12" fill="#FFFBEB" stroke="#B08543" stroke-width="1.8"/>
+          <text x="76" y="164" text-anchor="middle" fill="#B08543" font-size="11" font-weight="800">4. REFER</text>
+          <text x="76" y="182" text-anchor="middle" fill="#6C5764" font-size="10.5">3-Store QR + Reviews</text>
+        </svg>
+      </div>
+
+      <!-- 4 Crisp Loop Principles -->
+      <div class="loop-pillars anim-up d2">
+        <div class="lp-card">
+          <b>Why Funnels Bleed Cash in Bangladesh</b>
+          <p>Facebook ad prices rise every season. Brands that rely on one-time cold buyers lose margin fast.</p>
+        </div>
+        <div class="lp-card">
+          <b>Skincare Runs Out Every 45 to 60 Days</b>
+          <p>Once a shopper trusts your CeraVe or Korean sunscreen is 100% original, automated Day-40 WhatsApp refills turn first orders into pure profit.</p>
+        </div>
+        <div class="lp-card">
+          <b>Every Store Visit Fuels Digital Proof</b>
+          <p>Uttara, Police Plaza &amp; Airport shoppers scan a QR, leave a Google review, and join your VIP list, lowering your online acquisition cost every month.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">11</div>
+  </section>
+
+  <!-- ==================== 12: SIX HIGH-ROI GROWTH ENGINES (DE-CROWDED!) ==================== -->
+  <section class="page" id="slide-12" data-title="Six Digital Growth Engines">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>06 / Six Growth Engines</div>
+    </div>
+
+    <div class="chap">Six practical growth levers</div>
+    <h2>Built specifically for how Bangladesh buys beauty</h2>
+
+    <div class="engines-3x2">
+      <div class="eng-big anim-up">
+        <svg class="eng-ico" viewBox="0 0 40 40"><path d="M20 4 L34 10 V19 C34 28 28 34 20 37 C12 34 6 28 6 19 V10 Z"/><path d="M14 20 L18 24 L27 15"/></svg>
+        <b>1. Verify Before You Buy</b>
+        <p>Weekly "Real vs Fake" shelf Reels, batch-code guides, Open-Box delivery check &amp; 3-store guarantee beside Buy Now.</p>
+        <div class="tg">Target: +35% checkout trust</div>
+      </div>
+      <div class="eng-big anim-up d1">
+        <svg class="eng-ico" viewBox="0 0 40 40"><circle cx="18" cy="18" r="11"/><path d="M26 26 L35 35"/><path d="M13 18 H23 M18 13 V23"/></svg>
+        <b>2. Full-Funnel Meta &amp; Google</b>
+        <p>Bangla problem Reels (TOF), review retargeting (MOF), high-intent Google Search ("CeraVe price BD", "Chanel Dhaka").</p>
+        <div class="tg">Target: 4x to 6x ROAS</div>
+      </div>
+      <div class="eng-big anim-up d2">
+        <svg class="eng-ico" viewBox="0 0 40 40"><path d="M7 10 H33 V27 H17 L9 34 V27 H7 Z"/><path d="M14 17 H26 M14 22 H21"/></svg>
+        <b>3. WhatsApp Beauty Advisor</b>
+        <p>"Comment GLOW" 5-sec inbox bot + human skin advisor sending 1-tap COD checkout links &amp; abandoned cart nudges.</p>
+        <div class="tg">Target: 2x to 3x DM conversion</div>
+      </div>
+      <div class="eng-big anim-up d1">
+        <svg class="eng-ico" viewBox="0 0 40 40"><circle cx="20" cy="13" r="6"/><path d="M9 33 C9 26 14 22 20 22 C26 22 31 26 31 33"/><path d="M30 11 L35 8 M31 16 L36 16"/></svg>
+        <b>4. 25 Dhaka Micro-Creators</b>
+        <p>Invite 5K to 50K skincare creators to Police Plaza &amp; Uttara Square with tracked coupon codes; whitelist top clips as ads.</p>
+        <div class="tg">Target: -35% lower CPA</div>
+      </div>
+      <div class="eng-big anim-up d2">
+        <svg class="eng-ico" viewBox="0 0 40 40"><rect x="7" y="13" width="26" height="20" rx="3"/><path d="M14 13 V10 C14 7 16.5 5 20 5 C23.5 5 26 7 26 10 V13"/><path d="M7 20 H33"/></svg>
+        <b>5. Routine Kits &amp; Free Shipping</b>
+        <p>Acne, Glass Skin &amp; Winter bundles + live cart bar ("Add Tk 450 for FREE delivery at Tk 1,999") to lift basket size.</p>
+        <div class="tg">Target: +25% to 35% AOV</div>
+      </div>
+      <div class="eng-big anim-up d3">
+        <svg class="eng-ico" viewBox="0 0 40 40"><path d="M31 15 A12 12 0 1 0 32 23"/><path d="M31 8 V16 H23"/><path d="M20 14 V20 L24 23"/></svg>
+        <b>6. 45-Day Refill Machine</b>
+        <p>Automated WhatsApp &amp; Email reorder reminder on Day 40 when cleansers &amp; sunscreens finish, with a 5% VIP perk.</p>
+        <div class="tg">Target: 30%+ repeat order share</div>
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">12</div>
+  </section>
+
+  <!-- ==================== 13: FIVE NEW REVENUE CHANNELS ==================== -->
+  <section class="page blush" id="slide-13" data-title="New Revenue Channels: Impact vs Effort">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>06 / New Revenue Channels</div>
+    </div>
+
+    <div class="chap">Money beyond rising Facebook ad costs</div>
+    <h2>Five untapped revenue channels ready to launch</h2>
+
+    <div class="chan-pills" id="chanPills">
+      <button class="cpill active" onclick="pickChan(0)">Airport Gift Boxes</button>
+      <button class="cpill" onclick="pickChan(1)">Friday Live Shopping</button>
+      <button class="cpill" onclick="pickChan(2)">Corporate &amp; Wedding</button>
+      <button class="cpill" onclick="pickChan(3)">MUA Pro Card</button>
+      <button class="cpill" onclick="pickChan(4)">Bi-Monthly Glow Box</button>
+    </div>
+
+    <div class="matrixwrap">
+      <div class="matrix-box anim-up">
+        <div class="matrix" id="revMatrix">
+          <span class="q" style="top:12px; left:16px;">Quick Wins (High Impact, Low Effort)</span>
+          <span class="q" style="top:12px; right:16px;">Strategic Growth Bets</span>
+          <span class="q" style="bottom:10px; left:16px;">Easy Add-Ons</span>
+          <span class="q" style="bottom:10px; right:16px;">Longer-Term Builds</span>
+          <span style="position:absolute; bottom:-26px; right:4px; font-size:0.78rem; color:var(--soft);">Effort to Launch →</span>
+          <span style="position:absolute; top:10px; left:-20px; transform:rotate(-90deg) translateX(-100%); transform-origin:top left; font-size:0.78rem; color:var(--soft);">Revenue Impact →</span>
+
+          <button class="bub" aria-pressed="true" style="left:24%; bottom:76%; width:96px; height:96px;" onclick="pickChan(0)">Airport<br/>Gift Boxes</button>
+          <button class="bub" aria-pressed="false" style="left:36%; bottom:54%; width:88px; height:88px;" onclick="pickChan(1)">Friday Live<br/>Shopping</button>
+          <button class="bub" aria-pressed="false" style="left:58%; bottom:80%; width:100px; height:100px;" onclick="pickChan(2)">Corporate &amp;<br/>Wedding B2B</button>
+          <button class="bub" aria-pressed="false" style="left:66%; bottom:50%; width:90px; height:90px;" onclick="pickChan(3)">MUA Pro<br/>Bulk Card</button>
+          <button class="bub" aria-pressed="false" style="left:80%; bottom:30%; width:88px; height:88px;" onclick="pickChan(4)">Bi-Monthly<br/>Glow Box</button>
+        </div>
+      </div>
+
+      <div class="detail-card anim-up d2" id="chanDetail">
+        <div>
+          <div class="dtag" id="cdTag">QUICK WIN | CENTER POINT AIRPORT EXCLUSIVE</div>
+          <h3 id="cdTitle">Traveler &amp; NRB Ready-Wrapped Gift Boxes</h3>
+          <p id="cdDesc">Center Point Airport sits minutes from Hazrat Shahjalal International Airport. Arriving NRBs and travelers regularly need authentic last-minute fragrance and skincare gifts.</p>
+          <div class="fs" id="cdAction"><strong>First Step (Week 5):</strong> Pre-pack 4 ready-to-carry gift tiers (Tk 3,500 to Tk 25,000) in signature magenta boxes with gift cards at Shop #C10 entrance.</div>
+        </div>
+        <div style="font-size:0.8rem; color:var(--soft); margin-top:14px;">Select any channel bubble to inspect its launch plan.</div>
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">13</div>
+  </section>
+
+  <!-- ==================== 14: 12-WEEK INTERACTIVE GANTT ==================== -->
+  <section class="page" id="slide-14" data-title="90-Day Roadmap: 12-Week Interactive Gantt">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>07 / 90-Day Execution Plan</div>
+    </div>
+
+    <div class="chap">Execution roadmap (assuming a December 1 start)</div>
+    <h2>Twelve weeks, four workstreams, built around Dhaka's calendar</h2>
+
+    <div class="swipe-hint">Swipe timeline left or right to explore Weeks 1 to 12, and tap any bar for details →</div>
+
+    <div class="gantt anim-up">
+      <div class="gantt-inner">
+        <div class="months">
+          <div>Workstream</div>
+          <div>Month 1: Fix Leaks (Dec: Winter Peak)</div>
+          <div>Month 2: Convert (Jan: Wedding Season)</div>
+          <div>Month 3: Scale (Feb: Pre-Eid Ramp)</div>
+        </div>
+        <div class="grow-row hdr">
+          <div class="lane">Owner Lane</div>
+          <div>W1</div><div>W2</div><div>W3</div><div>W4</div>
+          <div>W5</div><div>W6</div><div>W7</div><div>W8</div>
+          <div>W9</div><div>W10</div><div>W11</div><div>W12</div>
+        </div>
+
+        <div class="grow-row">
+          <div class="lane">Website &amp; SEO</div>
+          <button class="gbar p1" aria-pressed="true" style="grid-column:2 / span 2;" onclick="pickTask(0,this)">Bugs + 301 + Speed</button>
+          <button class="gbar p2" aria-pressed="false" style="grid-column:6 / span 3;" onclick="pickTask(1,this)">Combos + Local/Product Schema</button>
+          <button class="gbar p3" aria-pressed="false" style="grid-column:10 / span 3;" onclick="pickTask(2,this)">12 SEO Guides + Backlinks</button>
+        </div>
+
+        <div class="grow-row">
+          <div class="lane">Social &amp; Creators</div>
+          <button class="gbar p1" aria-pressed="false" style="grid-column:3 / span 3;" onclick="pickTask(3,this)">1 Bangla Reel/Day + LinkedIn</button>
+          <button class="gbar p2" aria-pressed="false" style="grid-column:6 / span 4;" onclick="pickTask(4,this)">25 Dhaka Micro-Creators In-Store</button>
+          <button class="gbar p3" aria-pressed="false" style="grid-column:10 / span 4;" onclick="pickTask(5,this)">Weekly Friday Live Shopping</button>
+        </div>
+
+        <div class="grow-row">
+          <div class="lane">Paid &amp; WhatsApp</div>
+          <button class="gbar p1" aria-pressed="false" style="grid-column:3 / span 3;" onclick="pickTask(6,this)">Pixel/CAPI + WA Advisor Bot</button>
+          <button class="gbar p2" aria-pressed="false" style="grid-column:6 / span 4;" onclick="pickTask(7,this)">3-Layer Meta/Google + Cart Bot</button>
+          <button class="gbar p3" aria-pressed="false" style="grid-column:10 / span 4;" onclick="pickTask(8,this)">45-Day Refill Engine</button>
+        </div>
+
+        <div class="grow-row">
+          <div class="lane">3 Stores &amp; B2B</div>
+          <button class="gbar p1" aria-pressed="false" style="grid-column:4 / span 2;" onclick="pickTask(9,this)">QR Stand Prep</button>
+          <button class="gbar p2" aria-pressed="false" style="grid-column:6 / span 3;" onclick="pickTask(10,this)">Glow Club QR + Maps Reviews</button>
+          <button class="gbar p3" aria-pressed="false" style="grid-column:9 / span 5;" onclick="pickTask(11,this)">2-Hr Express + Airport + B2B Desk</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gdetail anim-up d2" id="gDetail">
+      <div>
+        <strong style="color:var(--mag);" id="gdTitle">Weeks 1 to 2 | Emergency Bugs, 301 Domain Merge &amp; Mobile Speed Rescue</strong>
+        <div style="color:var(--ink); margin-top:4px;" id="gdDesc">Remove YANY &amp; side-drawer placeholder text, fix /brands?slug=undefined, redirect glossyglowbd.com to glossyglow.com.bd, add SPF email seal, deploy Cloudflare + fix 1920px http:// images.</div>
+      </div>
+      <div class="gdetail-kpi">
+        <div style="font-size:0.74rem; text-transform:uppercase; color:var(--soft); font-weight:700;">Owner &amp; Target Finish</div>
+        <strong style="color:var(--good);" id="gdKpi">Growth + Dev | Load &lt;3.5s</strong>
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">14</div>
+  </section>
+
+  <!-- ==================== 15: THREE PHASES & FINISH LINES ==================== -->
+  <section class="page blush" id="slide-15" data-title="90-Day Milestones & Finish Lines">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>07 / Clear Finish Lines</div>
+    </div>
+
+    <div class="chap">What success looks like at each stage</div>
+    <h2>Three 30-day sprints, measurable executive finish lines</h2>
+
+    <div class="phases">
+      <div class="phase anim-up" style="background:linear-gradient(155deg,#E00A70,#A80350);">
+        <small>Phase 01 | Days 1 to 30</small>
+        <h3>Stop the Bleeding</h3>
+        <ul>
+          <li>Zero unfinished bugs (YANY, side drawer, dead brand links, typos gone)</li>
+          <li>glossyglowbd.com permanently merged into glossyglow.com.bd</li>
+          <li>Mobile load time cut from <strong>12.7s to under 3.5s</strong></li>
+          <li>SPF email passport + Meta Pixel / CAPI purchase tracking live</li>
+          <li>WhatsApp Beauty Advisor &amp; Comment-to-DM bot (&lt;2 min replies)</li>
+          <li>Instagram reset to 1 Bangla Reel/day; LinkedIn company page live</li>
+        </ul>
+        <div class="goal">Day 30 Finish Line: Mobile PageSpeed 75+, 0 trust bugs, 1.5%+ IG engagement</div>
+      </div>
+
+      <div class="phase anim-up d1" style="background:linear-gradient(155deg,#6E0639,#2F0C1E);">
+        <small>Phase 02 | Days 31 to 60</small>
+        <h3>Convert &amp; Connect</h3>
+        <ul>
+          <li>10 skin-concern Routine Combos + Free Delivery bar at Tk 1,999</li>
+          <li>Counter QR stands live in Uttara, Police Plaza &amp; Airport branches</li>
+          <li>3-layer Meta + TikTok + Google Brand Search ad funnel active</li>
+          <li>First 15 Dhaka micro-creators filming in-store with tracked codes</li>
+          <li>Product + Local Business + Organization Schema live (Google + AI)</li>
+          <li>Automated WhatsApp abandoned cart &amp; COD confirmation flow</li>
+        </ul>
+        <div class="goal">Day 60 Finish Line: 4x+ ROAS, +20% AOV, 600+ Glow Club VIPs, 100+ Maps reviews</div>
+      </div>
+
+      <div class="phase anim-up d2" style="background:linear-gradient(155deg,#B08543,#7A5722);">
+        <small>Phase 03 | Days 61 to 90</small>
+        <h3>Scale &amp; Repeat</h3>
+        <ul>
+          <li>Automated 45-Day Skincare Refill engine active via WhatsApp &amp; Email</li>
+          <li>2-Hour Express Dhaka Delivery pilot from Uttara &amp; Police Plaza</li>
+          <li>12 Bangla/English beauty buying guides + 25 quality backlinks live</li>
+          <li>Weekly Friday Shelf Live Shopping + Airport Traveler Gift Boxes</li>
+          <li>Gulshan Corporate Gifting &amp; Makeup Artist Pro Bulk Card launched</li>
+          <li>Q2 scaling plan ready for Chattogram &amp; Sylhet expansion</li>
+        </ul>
+        <div class="goal">Day 90 Finish Line: 2.2x to 3x online revenue, 30% repeat share, 1,500+ VIPs</div>
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">15</div>
+  </section>
+
+  <!-- ==================== 16: LIVE BDT REVENUE SIMULATOR (DEDICATED AIRY SLIDE!) ==================== -->
+  <section class="page" id="slide-16" data-title="Interactive BDT Revenue Recovery Model">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>07 / Financial Impact Model</div>
+    </div>
+
+    <div class="chap">Interactive revenue model &amp; Sunday KPIs</div>
+    <h2>Plug in Glossy Glow's real numbers to see the BDT upside</h2>
+
+    <div class="sim-kpi-strip anim-up">
+      <div class="skpi"><span>Target Mobile Load</span><b>&lt; 3.5 sec</b></div>
+      <div class="skpi"><span>Target Blended ROAS</span><b>4.0x to 6.0x</b></div>
+      <div class="skpi"><span>WhatsApp Close Rate</span><b>25% to 35%</b></div>
+      <div class="skpi"><span>COD Return Drop</span><b>-25% fewer returns</b></div>
+    </div>
+
+    <div class="calcrow">
+      <div class="anim-up d1">
+        <div class="preset-row">
+          <button class="pbtn" onclick="setMode(1,this)">Conservative</button>
+          <button class="pbtn active" onclick="setMode(2,this)">Target 90-Day</button>
+          <button class="pbtn" onclick="setMode(3,this)">Scale Mode</button>
+        </div>
+        <div class="fld">
+          <label><span>Monthly Website Visitors</span><output id="oVis">15,000</output></label>
+          <input type="range" id="iVis" min="5000" max="100000" step="1000" value="15000" oninput="calc()" />
+        </div>
+        <div class="fld">
+          <label><span>Current Mobile Conversion Rate</span><output id="oConv">0.8%</output></label>
+          <input type="range" id="iConv" min="0.3" max="2.5" step="0.1" value="0.8" oninput="calc()" />
+        </div>
+        <div class="fld">
+          <label><span>Current Average Order Value (AOV)</span><output id="oAov">Tk 1,400</output></label>
+          <input type="range" id="iAov" min="600" max="4500" step="100" value="1400" oninput="calc()" />
+        </div>
+        <div class="fld" style="margin-bottom:0;">
+          <label><span>Monthly Walk-Ins Across All 3 Stores</span><output id="oWalk">1,200</output></label>
+          <input type="range" id="iWalk" min="300" max="5000" step="100" value="1200" oninput="calc()" />
+        </div>
+        <input type="hidden" id="iMode" value="2" />
+      </div>
+
+      <div class="calcout anim-up d2">
+        <div style="font-size:0.74rem; letter-spacing:0.08em; text-transform:uppercase; opacity:0.7;">Projected Monthly Online + Omnichannel Revenue</div>
+        <div class="big" id="rTot">Tk 7,28,280</div>
+        <div style="font-size:0.88rem; color:#FDE68A; font-weight:600;" id="rDel">+Tk 5,60,280 / month extra (+333%)</div>
+
+        <div class="stack-bar">
+          <div id="b1" style="background:#9D8794;"></div>
+          <div id="b2" style="background:#EE1C84;"></div>
+          <div id="b3" style="background:#D9B47A;"></div>
+          <div id="b4" style="background:#60A5FA;"></div>
+          <div id="b5" style="background:#4ADE80;"></div>
+        </div>
+
+        <div class="row"><span>Current Online Baseline</span><strong id="rBase">Tk 1,68,000</strong></div>
+        <div class="row"><span>Speed, Trust &amp; WhatsApp Fix</span><strong id="rSpd" style="color:#FF8BC2;">+Tk 1,09,200</strong></div>
+        <div class="row"><span>Routine Kits &amp; Free-Shipping AOV</span><strong id="rAov">+Tk 61,080</strong></div>
+        <div class="row"><span>New Traffic (Reels, Creators, Ads, SEO)</span><strong id="rTrf">+Tk 2,03,000</strong></div>
+        <div class="row"><span>3-Store QR Glow Club Online Reorders</span><strong id="rStr" style="color:#4ADE80;">+Tk 1,87,000</strong></div>
+        <div class="row" style="font-size:0.96rem; padding-top:10px;">
+          <span>12-Month Incremental Revenue</span><strong id="rYr" style="color:#4ADE80;">+Tk 67.2 Lakh / yr</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">16</div>
+  </section>
+
+  <!-- ==================== 17: LEAN TEAM & ANIMATED 80/20 BUDGET ==================== -->
+  <section class="page blush" id="slide-17" data-title="Resources: Lean Team & Smart Budget">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>08 / Resources &amp; Budget Discipline</div>
+    </div>
+
+    <div class="chap">Resources</div>
+    <h2>Lean team, disciplined 80/20 budget allocation</h2>
+
+    <div class="three">
+      <div class="listc anim-up" style="align-items:center; text-align:center;">
+        <h3>Recommended Monthly Budget Split</h3>
+        <svg viewBox="0 0 190 190" width="172" height="172" style="margin:6px 0 14px;">
+          <circle cx="95" cy="95" r="66" fill="none" stroke="#D4086A" stroke-width="26" stroke-dasharray="186.6 414.7" transform="rotate(-90 95 95)"/>
+          <circle cx="95" cy="95" r="66" fill="none" stroke="#8A0445" stroke-width="26" stroke-dasharray="82.9 414.7" stroke-dashoffset="-186.6" transform="rotate(-90 95 95)"/>
+          <circle cx="95" cy="95" r="66" fill="none" stroke="#B08543" stroke-width="26" stroke-dasharray="62.2 414.7" stroke-dashoffset="-269.5" transform="rotate(-90 95 95)"/>
+          <circle cx="95" cy="95" r="66" fill="none" stroke="#167F52" stroke-width="26" stroke-dasharray="41.5 414.7" stroke-dashoffset="-331.7" transform="rotate(-90 95 95)"/>
+          <circle cx="95" cy="95" r="66" fill="none" stroke="#220E1A" stroke-width="26" stroke-dasharray="41.5 414.7" stroke-dashoffset="-373.2" transform="rotate(-90 95 95)"/>
+          <text x="95" y="92" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#220E1A">80/20</text>
+          <text x="95" y="109" text-anchor="middle" font-size="9.5" fill="#6C5764" font-weight="600">PROVEN / TEST</text>
+        </svg>
+        <div style="text-align:left; width:100%; font-size:0.82rem; display:grid; gap:6px;">
+          <div><span style="display:inline-block;width:10px;height:10px;background:#D4086A;border-radius:2px;margin-right:7px;"></span><strong>45%</strong> Meta, TikTok &amp; Google Ads</div>
+          <div><span style="display:inline-block;width:10px;height:10px;background:#8A0445;border-radius:2px;margin-right:7px;"></span><strong>20%</strong> 25 Micro-Creators &amp; Reels</div>
+          <div><span style="display:inline-block;width:10px;height:10px;background:#B08543;border-radius:2px;margin-right:7px;"></span><strong>15%</strong> WhatsApp CRM &amp; Retention</div>
+          <div><span style="display:inline-block;width:10px;height:10px;background:#167F52;border-radius:2px;margin-right:7px;"></span><strong>10%</strong> Web Speed, CRO &amp; SEO</div>
+          <div><span style="display:inline-block;width:10px;height:10px;background:#220E1A;border-radius:2px;margin-right:7px;"></span><strong>10%</strong> New Channel Experiments</div>
+        </div>
+      </div>
+
+      <div class="listc anim-up d1">
+        <h3>Lean Team (Zero Bloated Payroll)</h3>
+        <ul>
+          <li><strong>Head of Growth (Me):</strong> Strategy, P&amp;L ownership, paid media architecture, CRO, B2B deals &amp; coaching.</li>
+          <li><strong>Content &amp; Reels Producer (1):</strong> Films 1 sharp Bangla Reel/day across your 3 stores + manages micro-creators.</li>
+          <li><strong>WhatsApp Beauty Desk:</strong> Quiet morning hours of existing CS &amp; store staff converted into live skincare consultation.</li>
+          <li><strong>Dev Sprint (2 Weeks):</strong> Speed, 301 domain merge, schema &amp; live bug cleanup in Month 1.</li>
+        </ul>
+      </div>
+
+      <div class="listc anim-up d2">
+        <h3>Owner-First Financial Guardrails</h3>
+        <ul>
+          <li><strong>Fix Speed Before Scaling Spend:</strong> Hold extra ad budget until mobile load drops under 3.5s &amp; Pixel tracks real orders.</li>
+          <li><strong>80% Proven, 20% Test:</strong> Scale winning Bangla Reels &amp; high-margin hero SKUs (CeraVe, Bioderma, Perfumes) first.</li>
+          <li><strong>Pay Creators on Sales:</strong> Barter + tracked affiliate codes so creator marketing stays cash-positive.</li>
+          <li><strong>Automate Repetitive Work:</strong> Use AI for Sunday reporting, inbox routing &amp; Day-40 refill reminders.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">17</div>
+  </section>
+
+  <!-- ==================== 18: WHO WILL DELIVER IT: RAHAD AREFIN (DEDICATED AIRY SLIDE!) ==================== -->
+  <section class="page" id="slide-18" data-title="Who Will Deliver It: Rahad Arefin">
+    <div class="runhead">
+      <div class="runhead-brand"><img class="gg-badge" alt="GG"/> Glossy Glow</div>
+      <div>08 / Growth Leadership Partner</div>
+    </div>
+
+    <div class="chap">Who will deliver it</div>
+    <h2>Rahad Arefin: Fixing the business, not just the ads</h2>
+
+    <div class="about-grid">
+      <div class="anim-up">
+        <p style="font-size:0.98rem; color:var(--soft); line-height:1.6;">
+          Growth Marketing Leader based in Dhaka with <strong>8+ years</strong> scaling brands across <strong>Bangladesh, USA, Canada, UK &amp; Australia</strong>. Built systems across <strong>150+ client accounts</strong> and led a <strong>24-member team</strong> spanning paid media, SEO, CRO, creative, operations &amp; AI automation.
+        </p>
+
+        <div class="rahad-stats">
+          <div class="rstat">
+            <strong data-count="2.9" data-dec="1" data-prefix="$" data-suffix="M+">$2.9M+</strong>
+            <span>Ad spend managed</span>
+          </div>
+          <div class="rstat">
+            <strong data-count="24" data-dec="0" data-prefix="$" data-suffix="M+">$24M+</strong>
+            <span>Attributed revenue (4.7x ROAS)</span>
+          </div>
+        </div>
+
+        <a class="port-btn" href="https://www.rahadarefin.com" target="_blank" rel="noopener">Explore Portfolio: www.rahadarefin.com →</a>
+      </div>
+
+      <div class="cases anim-up d2">
+        <div class="case">
+          <b>+148%</b>
+          <span>FMCG Online Launch, Bangladesh</span>
+          <p>Scaled online orders through localized Bangla creative, funnel discipline &amp; a faster checkout flow.</p>
+        </div>
+        <div class="case">
+          <b>BDT 1.13 Cr</b>
+          <span>Premium Firm, Bangladesh (4 Months)</span>
+          <p>Replaced static graphics with a Meta &amp; TikTok video funnel + rebuilt landing flow (273 verified leads).</p>
+        </div>
+        <div class="case">
+          <b>+210%</b>
+          <span>Global eCommerce Brand (4.7x ROAS)</span>
+          <p>Restructured catalog ads &amp; checkout CRO to cut CPA by 38% and lift revenue per visitor by 71%.</p>
+        </div>
+        <div class="case">
+          <b>1 → 14 Units</b>
+          <span>Multi-Location Retail &amp; Ops Scale</span>
+          <p>Grew 1 client into 14 businesses (+190% orders in 60 days) by fixing ops, SOPs &amp; Local SEO alongside ads.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pfoot">Prepared by Rahad Arefin | www.rahadarefin.com</div>
+    <div class="pnum">18</div>
+  </section>
+
+  <!-- ==================== 19: PURE RADIANT CLOSING SLIDE ==================== -->
+  <section class="page closing-page" id="slide-19" data-title="Closing: Next Steps">
+    <div class="sheen"></div>
+    <div class="cover-frame"></div>
+
+    <svg class="cover-art-left" viewBox="0 0 180 340" fill="none" stroke="#FFFFFF" stroke-width="1.4">
+      <path d="M90 290 C90 210 50 165 50 110 C50 75 72 52 90 40 C108 52 130 75 130 110 C130 165 90 210 90 290 Z"/>
+      <path d="M90 290 V75"/>
+    </svg>
+    <svg class="cover-art-right" viewBox="0 0 180 340" fill="none" stroke="#FFFFFF" stroke-width="1.4">
+      <rect x="44" y="128" width="92" height="148" rx="18"/>
+      <rect x="70" y="96" width="40" height="32" rx="4"/>
+      <rect x="58" y="64" width="64" height="32" rx="6"/>
+    </svg>
+
+    <img class="anim-up" src="data:image/png;base64,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" alt="Glossy Glow" style="width:140px; height:auto; margin-bottom:28px; filter:drop-shadow(0 12px 24px rgba(74,0,34,0.35));" />
+    <h2 class="anim-up d1">Easier to trust. Faster to buy. Built to come back to.</h2>
+    <p class="csub anim-up d2">
+      Week 1 starts with reviewing your live POS, margins, and ad accounts together, so every single Taka in 2027 compounds into profitable omnichannel growth.
+    </p>
+    <a class="closing-cta anim-up d3" href="https://www.rahadarefin.com" target="_blank" rel="noopener">Rahad Arefin | www.rahadarefin.com →</a>
+  </section>
+
+</main>
+
+<!-- DESKTOP DECK BAR -->
+<div class="deck-bar">
+  <button onclick="step(-1)" title="Previous Slide (Left Arrow)">← Prev</button>
+  <span class="deck-counter" id="deckCounter">01 / 19</span>
+  <button class="primary" onclick="step(1)" title="Next Slide (Right Arrow)">Next →</button>
+  <button onclick="toggleOverview()" title="Jump to any slide">Slides</button>
+  <button id="viewBtn" onclick="toggleView()" title="Toggle Scroll View">Scroll View</button>
+  <button onclick="window.print()" title="Export 16:9 PDF">PDF</button>
+</div>
+
+<!-- OVERVIEW MODAL -->
+<div class="ov-modal" id="ovModal">
+  <div style="max-width:1120px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; color:#fff; gap:12px;">
+    <div>
+      <strong style="font-family:var(--serif); font-size:1.4rem; font-weight:400;">Glossy Glow Strategy &amp; Execution Plan (19 Slides)</strong>
+      <div style="font-size:0.78rem; opacity:0.72;">Tap any chapter to jump directly</div>
+    </div>
+    <button onclick="toggleOverview()" style="background:var(--mag); border:none; color:#fff; padding:8px 18px; border-radius:99px; font-weight:600; cursor:pointer;">Close</button>
+  </div>
+  <div class="ov-grid" id="ovGrid"></div>
+</div>
+
+<script>
+  const BADGE_URI = "data:image/jpeg;base64,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";
+  document.querySelectorAll('.gg-badge').forEach(img => img.src = BADGE_URI);
+
+  const pages = Array.from(document.querySelectorAll('.page'));
+  let cur = 0;
+
+  function isMobileLayout() {
+    return window.matchMedia('(max-width: 900px)').matches;
+  }
+
+  // Animate Numbers & Rings cleanly when a slide enters view
+  function animateSlideElements(slideEl) {
+    slideEl.classList.add('in-view');
+
+    if (slideEl.id === 'slide-7' && slideEl.dataset.waited !== '1') {
+      slideEl.dataset.waited = '1';
+      replayWait();
+    }
+
+    // Animate SVG ring arcs
+    slideEl.querySelectorAll('.ring-arc').forEach(arc => {
+      const target = arc.getAttribute('data-offset');
+      if (target !== null) {
+        requestAnimationFrame(() => { arc.style.strokeDashoffset = target; });
+      }
+    });
+
+    // Count-up numbers once per slide view
+    slideEl.querySelectorAll('[data-count]').forEach(el => {
+      if (el.dataset.counted === '1') return;
+      el.dataset.counted = '1';
+      const target = parseFloat(el.dataset.count);
+      const dec = parseInt(el.dataset.dec || '0', 10);
+      const pre = el.dataset.prefix || '';
+      const suf = el.dataset.suffix || '';
+      const dur = 750;
+      const start = performance.now();
+      function tick(now) {
+        const p = Math.min(1, (now - start) / dur);
+        const eased = 1 - Math.pow(1 - p, 3);
+        const val = target * eased;
+        const formatted = dec > 0 ? val.toFixed(dec) : Math.round(val).toLocaleString('en-US');
+        el.textContent = pre + formatted + suf;
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  }
+
+  // IntersectionObserver for Mobile / Scroll Mode reveals
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) animateSlideElements(entry.target);
+      });
+    }, { threshold: 0.18 });
+    pages.forEach(p => io.observe(p));
+  } else {
+    pages.forEach(p => animateSlideElements(p));
+  }
+
+  function goPage(idx) {
+    cur = Math.max(0, Math.min(pages.length - 1, idx));
+    pages.forEach((p, i) => {
+      const isAct = i === cur;
+      p.classList.toggle('active', isAct);
+      if (isAct) animateSlideElements(p);
+    });
+    document.getElementById('deckCounter').textContent =
+      String(cur + 1).padStart(2, '0') + ' / ' + String(pages.length).padStart(2, '0');
+    if (isMobileLayout() || document.body.classList.contains('scroll-mode')) {
+      pages[cur].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+  }
+
+  function step(d) { goPage(cur + d); }
+
+  function toggleView() {
+    const sc = document.body.classList.toggle('scroll-mode');
+    document.getElementById('viewBtn').textContent = sc ? 'Slide Mode' : 'Scroll View';
+    if (!sc) goPage(cur);
+  }
+
+  function toggleOverview() {
+    const m = document.getElementById('ovModal');
+    const isOpen = m.classList.toggle('open');
+    if (isOpen) {
+      const g = document.getElementById('ovGrid');
+      g.innerHTML = '';
+      pages.forEach((p, i) => {
+        const c = document.createElement('div');
+        c.className = 'ov-card' + (i === cur ? ' current' : '');
+        c.innerHTML = '<small>SLIDE ' + String(i + 1).padStart(2, '0') + '</small><b>' + p.dataset.title + '</b>';
+        c.onclick = () => { m.classList.remove('open'); goPage(i); };
+        g.appendChild(c);
+      });
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (document.getElementById('ovModal').classList.contains('open')) {
+      if (e.key === 'Escape') toggleOverview();
+      return;
+    }
+    if (e.target.tagName === 'INPUT') return;
+    if (!isMobileLayout() && !document.body.classList.contains('scroll-mode')) {
+      if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); step(1); }
+      if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); step(-1); }
+    }
+  });
+
+  // Replay Live 12.7s Phone Wait Timer (Slide 07)
+  let waitTimerId = null;
+  function replayWait() {
+    if (waitTimerId) clearInterval(waitTimerId);
+    const clock = document.getElementById('waitClock');
+    let t = 0.0;
+    clock.textContent = '0.0s';
+    waitTimerId = setInterval(() => {
+      t = Math.min(12.7, t + 0.3);
+      clock.textContent = t.toFixed(1) + 's';
+      if (t >= 12.7) clearInterval(waitTimerId);
+    }, 80);
+  }
+
+  function toggleDev(btn) {
+    const box = btn.nextElementSibling;
+    const open = box.classList.toggle('open');
+    btn.textContent = open ? '- Hide Developer Speed Fix Brief' : '+ Show Developer Speed Fix Brief';
+  }
+
+  // Interactive Channels (Slide 13)
+  const channels = [
+    {
+      tag: 'QUICK WIN | CENTER POINT AIRPORT EXCLUSIVE',
+      title: 'Traveler & NRB Ready-Wrapped Gift Boxes',
+      desc: 'Center Point Airport sits minutes from Hazrat Shahjalal International Airport. Arriving NRBs and travelers regularly need authentic last-minute fragrance and skincare gifts.',
+      action: 'First Step (Week 5): Pre-pack 4 ready-to-carry gift tiers (Tk 3,500 to Tk 25,000) in signature magenta boxes with gift cards at Shop #C10 entrance.'
+    },
+    {
+      tag: 'ZERO AD COST | POLICE PLAZA STUDIO',
+      title: 'Weekly Friday Shelf Live Shopping',
+      desc: '45-minute Bangla live sessions streamed straight from Police Plaza shelves showing real stock, shade swatches, and authenticity seals drive high-impulse weekend COD sales.',
+      action: 'First Step (Week 6): Host every Friday 8 PM with 5 flash-deal combos and Comment-to-DM instant booking.'
+    },
+    {
+      tag: 'HIGH-TICKET B2B | GULSHAN-1 ADVANTAGE',
+      title: 'Corporate & Wedding Gifting Desk',
+      desc: "Police Plaza sits in the heart of Gulshan-1 corporate offices. Pitch branded beauty & fragrance gift hampers for corporate milestones, Women's Day, Eid, and Dhaka Holud favors.",
+      action: 'First Step (Week 9): Launch LinkedIn company page + outreach to 50 Gulshan HR/Admin leads with a custom hamper catalog.'
+    },
+    {
+      tag: 'PREDICTABLE TRADE VOLUME | DHAKA WIDE',
+      title: 'Makeup Artist (MUA) Pro Bulk Card',
+      desc: 'Thousands of Dhaka bridal & party makeup artists buy MAC, Maybelline, Sheglam, primers & setting sprays weekly. Offer a verified MUA Pro Card (10% to 15% trade tier).',
+      action: 'First Step (Week 10): Recruit 40 Uttara & Gulshan MUAs via Instagram DM + invite them to a private brand trial evening.'
+    },
+    {
+      tag: 'RECURRING CASH FLOW | VIP RETENTION',
+      title: 'Bi-Monthly "Glow Box" Refill Subscription',
+      desc: 'Busy Gulshan & Uttara professionals run out of cleanser, sunscreen & moisturizer every 45 to 60 days. Offer an automated WhatsApp refill bundle with 7% VIP savings.',
+      action: 'First Step (Week 11): Offer enrollment to all repeat Glow Club buyers on their second order.'
+    }
+  ];
+
+  function pickChan(i) {
+    document.querySelectorAll('#revMatrix .bub').forEach((b, idx) => b.setAttribute('aria-pressed', idx === i ? 'true' : 'false'));
+    document.querySelectorAll('#chanPills .cpill').forEach((p, idx) => p.classList.toggle('active', idx === i));
+    const c = channels[i];
+    document.getElementById('cdTag').textContent = c.tag;
+    document.getElementById('cdTitle').textContent = c.title;
+    document.getElementById('cdDesc').textContent = c.desc;
+    document.getElementById('cdAction').innerHTML = '<strong>' + c.action.split(':')[0] + ':</strong>' + c.action.slice(c.action.indexOf(':') + 1);
+  }
+
+  // Interactive Gantt (Slide 14)
+  const tasks = [
+    { t: 'Weeks 1 to 2 | Emergency Bugs, 301 Domain Merge & Mobile Speed Rescue', d: 'Remove YANY & side-drawer placeholder text, fix /brands?slug=undefined, redirect glossyglowbd.com to glossyglow.com.bd, add SPF email seal, deploy Cloudflare + optimize 1920px http:// images.', k: 'Growth + Dev | Load <3.5s' },
+    { t: 'Weeks 5 to 7 | Skin-Concern Menus, Routine Combos & Schema Markup', d: 'Launch 10 curated combos (Acne, Glass Skin, Winter) + Free Delivery cart bar at Tk 1,999 + Product, Organization & 3-store LocalBusiness Schema.', k: 'Growth + Dev | +25% AOV' },
+    { t: 'Weeks 9 to 11 | SEO Buying Guides & Backlink Authority Sprint', d: 'Publish 12 Bangla/English buyer guides ("Original CeraVe BD", "Best Korean Sunscreen Dhaka") + earn 25+ creator & PR backlinks.', k: 'SEO + Content | Links F → B' },
+    { t: 'Weeks 2 to 4 | Social Content Reset & LinkedIn Launch', d: 'Cut Instagram from 5 posts/day to 1 sharp Bangla Reel/day + daily Stories; clean duplicate YouTube playlists & broken links; launch official LinkedIn.', k: 'Content Team | 1.5%+ IG ER' },
+    { t: 'Weeks 5 to 8 | 25 Dhaka Micro-Creator In-Store Program', d: 'Invite 5K to 50K skincare creators to Police Plaza & Uttara Square for authenticity checks & hauls using tracked coupon codes; whitelist top clips as ads.', k: 'Influencer Lead | -35% CPA' },
+    { t: 'Weeks 9 to 12 | Weekly Friday Shelf Live Shopping', d: 'Stream 45-min Bangla live swatch & authenticity shows from Police Plaza shelves every Friday night with flash-bundle offers.', k: 'Growth + Retail | High-Margin Sales' },
+    { t: 'Weeks 2 to 4 | Clean Tracking + WhatsApp Beauty Advisor Desk', d: 'Verify Meta Pixel + Conversions API purchase events; deploy Comment-to-DM automation & human WhatsApp skincare desk sending 1-tap COD links.', k: 'Growth + CS | <2 Min Reply' },
+    { t: 'Weeks 5 to 8 | 3-Layer Meta, TikTok & Google Search Funnel', d: 'Launch Bangla skin-problem Reels (TOF), authenticity/review retargeting (MOF), Google Brand Search ads & automated WhatsApp cart recovery.', k: 'Performance | 4x to 6x ROAS' },
+    { t: 'Weeks 9 to 12 | Automated 45-Day Skincare Refill Engine', d: 'Trigger personalized Day-40 WhatsApp & Email reorder reminders for cleansers, sunscreens & serums with 1-tap checkout and 5% VIP perk.', k: 'CRM / Growth | 30% Repeat Share' },
+    { t: 'Weeks 3 to 4 | 3-Store QR Counter Kit Preparation', d: 'Design counter acrylic QR stands for Uttara Square, Police Plaza & Center Point Airport + train store staff on 15-second VIP signup script.', k: 'Growth + Store Mgrs | Ready W5' },
+    { t: 'Weeks 5 to 7 | Glow Club QR Rollout & Google Maps Review Push', d: 'Capture 600+ walk-in WhatsApp contacts with Tk 100 voucher & collect 100+ verified 5-star Google Maps reviews across all 3 branches.', k: 'Store Managers | #1 Local Rank' },
+    { t: 'Weeks 8 to 12 | 2-Hr Express Dispatch, Airport Boxes & B2B Desk', d: 'Launch 2-hour Uttara/Gulshan delivery from nearest store stock, Airport Traveler Gift Boxes, Corporate Gifting outreach & MUA Pro Bulk Card.', k: 'Head of Growth | 5 New Channels' }
+  ];
+
+  function pickTask(i, btn) {
+    document.querySelectorAll('.gbar').forEach(b => b.setAttribute('aria-pressed', 'false'));
+    btn.setAttribute('aria-pressed', 'true');
+    document.getElementById('gdTitle').textContent = tasks[i].t;
+    document.getElementById('gdDesc').textContent = tasks[i].d;
+    document.getElementById('gdKpi').textContent = tasks[i].k;
+  }
+
+  // Interactive BDT Financial Model (Slide 16)
+  function tk(n) { return 'Tk ' + Math.round(n).toLocaleString('en-IN'); }
+
+  function setMode(m, btn) {
+    document.getElementById('iMode').value = m;
+    document.querySelectorAll('.pbtn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    calc();
+  }
+
+  function calc() {
+    const vis = parseInt(document.getElementById('iVis').value, 10);
+    const conv = parseFloat(document.getElementById('iConv').value) / 100;
+    const aov = parseInt(document.getElementById('iAov').value, 10);
+    const walk = parseInt(document.getElementById('iWalk').value, 10);
+    const m = parseInt(document.getElementById('iMode').value, 10);
+
+    const p = {
+      1: { cM: 0.40, aM: 0.15, tM: 0.35, sC: 0.08 },
+      2: { cM: 0.65, aM: 0.22, tM: 0.60, sC: 0.12 },
+      3: { cM: 0.95, aM: 0.30, tM: 1.00, sC: 0.18 }
+    }[m];
+
+    document.getElementById('oVis').textContent = vis.toLocaleString('en-IN');
+    document.getElementById('oConv').textContent = (conv * 100).toFixed(1) + '%';
+    document.getElementById('oAov').textContent = tk(aov);
+    document.getElementById('oWalk').textContent = walk.toLocaleString('en-IN');
+
+    const base = vis * conv * aov;
+    const nConv = conv * (1 + p.cM);
+    const nAov = aov * (1 + p.aM);
+
+    const spd = (vis * (nConv - conv)) * aov;
+    const aovL = (vis * nConv) * (nAov - aov);
+    const trf = (vis * p.tM) * nConv * nAov;
+    const str = (walk * p.sC) * nAov;
+
+    const ext = spd + aovL + trf + str;
+    const tot = base + ext;
+    const pct = base > 0 ? Math.round((ext / base) * 100) : 0;
+    const yrLakh = ((ext * 12) / 100000).toFixed(1);
+
+    document.getElementById('rTot').textContent = tk(tot);
+    document.getElementById('rDel').textContent = '+' + tk(ext) + ' / month extra (+' + pct + '%)';
+    document.getElementById('rBase').textContent = tk(base);
+    document.getElementById('rSpd').textContent = '+' + tk(spd);
+    document.getElementById('rAov').textContent = '+' + tk(aovL);
+    document.getElementById('rTrf').textContent = '+' + tk(trf);
+    document.getElementById('rStr').textContent = '+' + tk(str);
+    document.getElementById('rYr').textContent = '+Tk ' + yrLakh + ' Lakh / yr';
+
+    const s = tot || 1;
+    document.getElementById('b1').style.width = (base / s * 100) + '%';
+    document.getElementById('b2').style.width = (spd / s * 100) + '%';
+    document.getElementById('b3').style.width = (aovL / s * 100) + '%';
+    document.getElementById('b4').style.width = (trf / s * 100) + '%';
+    document.getElementById('b5').style.width = (str / s * 100) + '%';
+  }
+
+  calc();
+  animateSlideElements(pages[0]);
+</script>
+</body>
+</html>
