@@ -1,6 +1,6 @@
 # Glossy Glow: 90-Day Growth & Revenue Acceleration Plan
 
-An executive strategy and execution deck prepared by **Rahad Arefin** for the **Head of Growth & Marketing** interview at **Glossy Glow** (`www.glossyglow.com.bd`).
+An executive strategy and execution deck prepared by **Rahad Arefin** in request of **Glossy Glow** (`www.glossyglow.com.bd`).
 
 ## [`Glossy Glow | Live Deck`](https://ggplan.vercel.app/)
 
