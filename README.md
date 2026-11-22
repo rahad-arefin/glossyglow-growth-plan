@@ -2,9 +2,7 @@
 
 An executive strategy and execution deck prepared by **Rahad Arefin** for the **Head of Growth & Marketing** interview at **Glossy Glow** (`www.glossyglow.com.bd`).
 
-## Live Presentation
-
-[`Glossy Glow | Live Deck`](https://ggplan.vercel.app/)
+## [`Glossy Glow | Live Deck`](https://ggplan.vercel.app/)
 
 
 ## What Is Inside (19 Slides)
